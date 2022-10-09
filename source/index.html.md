@@ -63,7 +63,7 @@ The Open Data Product Specification is a vendor-neutral, open-source machine-rea
 
 The specification has been designed with four major aspects of the data product in mind: 1) technical (infrastructure & access), 2) business (pricing & plans), 3) legal (licensing & IPR), and 4) ethical (privacy & mydata). The four aspects are described in 5 elements, which contain attributes and other elements. 
 
-![odps-model](images/ODPS-design.jpg)
+![odps-model](images/ODPS-design-v-1.1.jpg)
 
 **Specification aims:**
 
