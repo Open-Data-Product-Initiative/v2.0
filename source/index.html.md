@@ -41,11 +41,11 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 The specification is shared under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a> license. 
 
-**Published 4th Feb 2022**
+**TO BE PUBLISHED**
 
 **Latest version source:**
 
-* <a href="https://github.com/Open-Data-Product-Initiative/open-data-product-spec">https://github.com/Open-Data-Product-Initiative/open-data-product-spec</a>
+* <a href="https://github.com/Open-Data-Product-Initiative/open-data-product-spec-1.1dev">https://github.com/Open-Data-Product-Initiative/open-data-product-spec-1.1dev</a>
 
 **Editors:**
 
