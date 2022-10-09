@@ -1,6 +1,6 @@
 # Data Access
 
-Data access is the authorised ability to retrieve, edit, copy or transfer data from IT systems.
+Data access **OBJECT** describes the authorised ability to retrieve, edit, copy or transfer data from IT systems.
 
 > Example of Data Access component usage:
 
