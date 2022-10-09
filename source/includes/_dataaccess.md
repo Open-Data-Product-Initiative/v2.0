@@ -12,7 +12,7 @@ Data access **OBJECT** describes the authorised ability to retrieve, edit, copy 
     "authenticationMethod": "OAuth",
     "specification": "OAS",
     "format": "GraphQL",
-    "documentationURL": "http://192.168.10.1/petshop.json"
+    "docURL": "http://192.168.10.1/petshop.json"
   }
 }
   
@@ -24,5 +24,4 @@ Data access **OBJECT** describes the authorised ability to retrieve, edit, copy 
 | authenticationMethod | string | any  | Data access authentication method type, such as API key, HTTP Basic, OAuth, No authentication. |
 | specification | string | any  | Type of the data access specification, such as OAS, RAML, Slate. |
 | format | string | any | 	Data access file format type, such as JSON, XML, GraphQL, plain text. |
-| specsURL | URL | Valid URL  | 	The URL of the specification. |
-| documentationURL | URL | Valid URL  | The URL of the data access documentation. |
+| documentationURL | URL | Valid URL  | The URL of the data access documentation, such as OpenAPI specification document(s).|
