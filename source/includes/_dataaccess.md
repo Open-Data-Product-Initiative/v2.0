@@ -12,7 +12,7 @@ Data access **OBJECT** describes the authorised ability to retrieve, edit, copy 
     "authenticationMethod": "OAuth",
     "specification": "OAS",
     "format": "GraphQL",
-    "docURL": "http://192.168.10.1/petshop.json"
+    "DocumentationURL": "http://192.168.10.1/petshop.json"
   }
 }
   
