@@ -1,0 +1,1791 @@
+
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" href=https://data-product-business.github.io/open-data-product-spec/images/favicon-bc890431.png"/>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Open Data Product Specification 1.0" />
+    <meta property="og:url" content="https://data-product-business.github.io/open-data-product-spec/" />
+    <meta property=”og:type” content=”website” />
+    <meta property="og:image" content="https://opendataproducts.org/images/logo-dps-new-4bb33ca5.png" />
+    <meta property="og:description" 
+    content="The Open Data Product Specification is a vendor-neutral, open-source machine-readable data product metadata model. It defines the objects and attributes as well as the structure of digital data products." />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta
+            name="description"
+            content="The Open Data Product Specification is a vendor-neutral, open-source machine-readable data product metadata model. It defines the objects and attributes as well as the structure of digital data products."
+        >
+    <title>Open Data Product Specification | Enabling Data Economy | Data Product Business</title>
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-7e6f7780.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-b12a2749.js"></script>
+
+    <script>
+      $(function() { setupCodeCopy(); });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NN2RZ765V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8NN2RZ765V');
+    </script>
+
+  </head>
+
+  <body class="index" data-languages="[&quot;JSON&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-dps-new-4bb33ca5.png" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="JSON">JSON</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#open-data-product-specification" class="toc-h1 toc-link" data-title="OPEN DATA PRODUCT SPECIFICATION">OPEN DATA PRODUCT SPECIFICATION</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#version-1-0" class="toc-h2 toc-link" data-title="Version 1.0">Version 1.0</a>
+                  </li>
+                  <li>
+                    <a href="#introduction" class="toc-h2 toc-link" data-title="Introduction">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="#document-structure" class="toc-h2 toc-link" data-title="Document structure">Document structure</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#document-level-attributes" class="toc-h1 toc-link" data-title="Document level attributes">Document level attributes</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mandatory-attributes" class="toc-h2 toc-link" data-title="Mandatory attributes">Mandatory attributes</a>
+                  </li>
+                  <li>
+                    <a href="#optional-attributes" class="toc-h2 toc-link" data-title="Optional attributes">Optional attributes</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#data-pricing" class="toc-h1 toc-link" data-title="Data Pricing">Data Pricing</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mandatory-attributes-and-elements" class="toc-h2 toc-link" data-title="Mandatory attributes and elements">Mandatory attributes and elements</a>
+                  </li>
+                  <li>
+                    <a href="#optional-attributes-and-elements" class="toc-h2 toc-link" data-title="Optional attributes and elements">Optional attributes and elements</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#dataops" class="toc-h1 toc-link" data-title="DataOps">DataOps</a>
+          </li>
+          <li>
+            <a href="#data-access" class="toc-h1 toc-link" data-title="Data Access">Data Access</a>
+          </li>
+          <li>
+            <a href="#data-sla" class="toc-h1 toc-link" data-title="Data SLA">Data SLA</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#optional-attributes-and-elements" class="toc-h2 toc-link" data-title="Optional attributes and elements">Optional attributes and elements</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#data-licensing" class="toc-h1 toc-link" data-title="Data Licensing">Data Licensing</a>
+          </li>
+          <li>
+            <a href="#data-holder" class="toc-h1 toc-link" data-title="Data Holder">Data Holder</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mandatory-attributes-and-elements" class="toc-h2 toc-link" data-title="Mandatory attributes and elements">Mandatory attributes and elements</a>
+                  </li>
+                  <li>
+                    <a href="#optional-attributes-and-elements" class="toc-h2 toc-link" data-title="Optional attributes and elements">Optional attributes and elements</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#specification-extensions" class="toc-h1 toc-link" data-title="Specification extensions">Specification extensions</a>
+          </li>
+          <li>
+            <a href="#hello-world-example" class="toc-h1 toc-link" data-title="Hello world example">Hello world example</a>
+          </li>
+          <li>
+            <a href="#terms-used" class="toc-h1 toc-link" data-title="Terms used">Terms used</a>
+          </li>
+          <li>
+            <a href="#editors-and-contributors" class="toc-h1 toc-link" data-title="Editors and contributors">Editors and contributors</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#list-of-community-contributors" class="toc-h2 toc-link" data-title="List of community contributors">List of community contributors</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://www.dataproductbusiness.com/'>Data Product Business</a></li>
+            <li>License <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a></li>
+            <li><br/><a href='https://www.dataproductbusiness.com/open-data-product-specification'>Specification home</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='open-data-product-specification'>OPEN DATA PRODUCT SPECIFICATION</h1><h2 id='version-1-0'>Version 1.0</h2>
+<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.</p>
+
+<p>The specification is shared under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a> license. </p>
+
+<p><strong>Published 4th Feb 2022</strong></p>
+
+<p><strong>Latest version source:</strong></p>
+
+<ul>
+<li><a href="https://github.com/Open-Data-Product-Initiative/open-data-product-spec">https://github.com/Open-Data-Product-Initiative/open-data-product-spec</a></li>
+</ul>
+
+<p><strong>Editors:</strong></p>
+
+<ul>
+<li><a href="https://www.linkedin.com/in/jarkkomoilanen/">Jarkko Moilanen</a></li>
+<li><a href="https://www.linkedin.com/in/jussi-niilahti/">Jussi Niilahti</a></li>
+</ul>
+
+<p><strong>Participate:</strong></p>
+
+<ul>
+<li><a href="https://github.com/Data-Product-Business/open-data-product-spec/issues/new/">Raise an issue in Github</a></li>
+<li><a href="https://v90nkeo0oq0.typeform.com/to/Q1Zo6wE5">Raise an issue in service designed for average mortals</a> </li>
+</ul>
+<h2 id='introduction'>Introduction</h2>
+<p>The Open Data Product Specification is a vendor-neutral, open-source machine-readable data product metadata model. It defines the objects and attributes as well as the structure of digital data products. The work is based on existing standards (schema.org), best practices and emerging concepts like Data Mesh. The reasoning is that we reuse and proudly copy instead of reinventing the wheel. More detailed information of the origin can be found from the <a href="https://www.dataproductbusiness.com/open-data-product-specification">Open Data Product Specification homepage</a>. </p>
+
+<p>The specification has been designed with four major aspects of the data product in mind: 1) technical (infrastructure &amp; access), 2) business (pricing &amp; plans), 3) legal (licensing &amp; IPR), and 4) ethical (privacy &amp; mydata). The four aspects are described in 5 elements, which contain attributes and other elements. </p>
+
+<p><img src="images/ODPS-design-910c6f19.jpg" alt="odps-model" /></p>
+
+<p><strong>Specification aims:</strong></p>
+
+<ul>
+<li>enable interoperability between organizations, data platforms,  marketplaces, and tools. </li>
+<li>reduce data product metadata conversions and errors between systems and organizations, </li>
+<li>increase the speed of designing, testing, and implementing data products. </li>
+<li>speed up tools development around data product design, development and management.</li>
+<li>enable creation of automated data product deployment with standard methods (DataOps)</li>
+</ul>
+
+<p><strong>Note!</strong> In the &quot;Open Data Product&quot; focus is on the latter words and the prefix  &#39;open&#39; refers to the openness of the standard. Any kind of connotations to open data (a different thing) are not intentional, intended, or desirable.</p>
+
+<p>If you see something missing, described inaccurately or plain wrong, or you want to comment the specification, click the button below and proceed forward. </p>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h2 id='document-structure'>Document structure</h2>
+<p><strong>LEFT COLUMN: Navigation</strong></p>
+
+<p>The left column is navigation which enables fluent and easy movement around the specification. </p>
+
+<p><strong>MIDDLE COLUMN: Principles and components</strong></p>
+
+<p>The middle column contains detailed information about the included components and related options. This is the theory part. </p>
+
+<p>Note! Mandatory elements and attributes are listed separately in the definition tables. This enables user to construct minimum viable specification more easily and fast. https://schema.org provided ready-made definitions are applied when ever possible instead of re-inventing the wheel. </p>
+
+<p><strong>RIGHT COLUMN: Examples</strong></p>
+
+<p>The right column contains JSON formatted examples of how the specification is used. In the future other output formats are added on request basis. </p>
+
+<blockquote>
+<p>Example of JSON formatted snippet from the Open Data Product specification:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">monitoring</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+
+  <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://monitoring.com</span><span class="dl">"</span>
+<span class="p">}</span>
+</code></pre></div>
+<aside class="notice">
+The JSON examples are not based on any real data product, but exemplify the usage of Open Data Product Specification. 
+
+</aside>
+<h1 id='document-level-attributes'>Document level attributes</h1>
+<p>Here&#39;s the list of attributes which can occur at the document root level. In the following description, if a field is not explicitly <strong>REQUIRED</strong> or described with a MUST or SHALL, it can be considered OPTIONAL. Optional attributes are listed in own table and examples are given on the right column. </p>
+<h2 id='mandatory-attributes'>Mandatory attributes</h2>
+<blockquote>
+<p>Example of document level attribute usage and structure:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong> The name of the product.</td>
+</tr>
+<tr>
+<td><strong>productID</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong> Product identifier.</td>
+</tr>
+<tr>
+<td><strong>visibility</strong></td>
+<td>one of</td>
+<td>one of: private, organisation, public</td>
+<td><strong>REQUIRED</strong> The publicity level eg who can see this product. Private - just the creator. Organisation - visible to all in your organisation. Public - visible to all publicly.</td>
+</tr>
+<tr>
+<td><strong>status</strong></td>
+<td>one of</td>
+<td>one of: announcement, draft, development, testing, acceptance, production, sunset, retired</td>
+<td><strong>REQUIRED</strong> The status of the product. Lifecycle model discussed in details in here (link).</td>
+</tr>
+<tr>
+<td><strong>type</strong></td>
+<td>one of</td>
+<td>Options: raw data, derived data, dataset, reports, analytic view, 3D visualisation, algorithm, decision support, automated decision-making, data-enhanced product, data-driven service, data-enabled performance, bi-directional.</td>
+<td><strong>REQUIRED</strong> The type of the product. Options are derived from examples and lists found from academic literature.</td>
+</tr>
+</tbody></table>
+<h2 id='optional-attributes'>Optional attributes</h2>
+<blockquote>
+<p>Example of document level attribute usage and structure:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">categories</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">],</span>
+  <span class="dl">"</span><span class="s2">tags</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pet</span><span class="dl">"</span><span class="p">],</span>
+  <span class="dl">"</span><span class="s2">brandSlogan</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Passion for the data monetization</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>valueProposition</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>This is the product&#39;s value proposition. Often one or two sentences and crystallizes the value for the customer.</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>-</td>
+<td>The description of the product. Text only.</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>array</td>
+<td>-</td>
+<td>Comma separates array of categories.</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>array</td>
+<td>-</td>
+<td>Comma separates array of tags.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>string</td>
+<td>The versioning scheme is <strong>major.minor.</strong>. Examples: 1.0, 2.1, 3.15</td>
+<td>The version of the product.</td>
+</tr>
+<tr>
+<td>logoURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>Valid URL of the logo. See more from <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</td>
+</tr>
+<tr>
+<td>brandSlogan</td>
+<td>string</td>
+<td>-</td>
+<td>Brand related slogan like Nike has <em>just do it</em>.</td>
+</tr>
+</tbody></table>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h1 id='data-pricing'>Data Pricing</h1>
+<p>Pricing is the process whereby a business sets the price at which it will sell its products and services. Pricing <strong>OBJECT</strong> consists of mandatory and optional attributes. This element contains pricing plans related data to be used for example in displaying the items in a marketplace. If needed the standard metadata is converted to marketplace internal format. We encourage all data product owners to enforce usage of this standard.  </p>
+
+<p>Mandatory attributes are listed in separate table and marked with <strong>bolded names</strong> and asterix <strong>*</strong>. Next to the mandatory attributes is an example. </p>
+
+<p>The same logic applies to the optional attributes as well. Optional attributes are listed in own table and an example is given in the right column. </p>
+
+<p>Supported pricing models include:</p>
+
+<ol>
+<li>recurring time period based (day, week, month, year) plans</li>
+<li>one time payments plans</li>
+<li>pay-as-you-go plans</li>
+<li>revenue sharing plans</li>
+<li>data volume plan</li>
+<li>dynamic pricing (high and low limits for automated pricing)</li>
+<li>Pay what you want plans</li>
+</ol>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h2 id='mandatory-attributes-and-elements'>Mandatory attributes and elements</h2>
+<blockquote>
+<p>Example of Pricing component usage with manadatory elements and attributes:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">pricing</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium Package Monthly</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span> 
+         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">10000</span>
+       <span class="p">},</span>
+       <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Freemium Package</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0.00</span><span class="dl">"</span><span class="p">,</span> 
+         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1000</span>
+       <span class="p">},</span>
+       <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Revenue sharing</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">percentage</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.50</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">revenue-sharing</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">20000</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">50.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">year</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">unlimited</span><span class="dl">"</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong> The name of the plan/offering.</td>
+</tr>
+<tr>
+<td><strong>priceCurrency</strong></td>
+<td>string</td>
+<td>Use standard formats: <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> currency format e.g. &quot;USD&quot;; Ticker symbol for cryptocurrencies e.g. &quot;BTC&quot;</td>
+<td><strong>REQUIRED</strong> The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies. If the <em>unit</em> is revenue-sharing, then this attribute value MUST be percentage.</td>
+</tr>
+<tr>
+<td><strong>price</strong></td>
+<td>string</td>
+<td>-</td>
+<td><strong>REQUIRED</strong> The offer price of a product, or of a price component, or revenue-sharing percentage. <br/><br/> If the <em>unit</em> of pricing is revenue-sharing, then this <em>price</em> attribute value is percentage value. <br/><br/> Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols. <br/><br/>With <em>data-volume</em> the price is for each 1GB of data.</td>
+</tr>
+<tr>
+<td><strong>billingDuration</strong></td>
+<td>string</td>
+<td>options: instant, day, week, month, year</td>
+<td><strong>REQUIRED</strong> Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan.</td>
+</tr>
+<tr>
+<td><strong>unit</strong></td>
+<td>string</td>
+<td>One of: one-time-payment, pay-per-use, recurring, revenue-sharing, data-volume , pay-what-you-want</td>
+<td><strong>REQUIRED</strong> One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. <br/><br/> <em>Pay-per-use</em> is intended for continuous usage and price set is for each successful usage action. <br/><br/> <em>Recurrring</em> is intended for continuous time period plans. <br/><br/><em>Revenue sharing</em> is a performance-based income model. An effective revenue sharing deal structure is offering your expertise to a business owner to help them grow their business. In return, you get paid a percentage of the revenue as a royalty fee. <br/><br/> <em>Data-volume</em> is for data amount based pricing in which customer pays based on the served data amount. The price is always for 1GB of data. <br/><br/> <em>pay-what-you-want</em>  is a pricing system where buyers pay any desired amount for a given commodity, sometimes including zero. In some cases, a minimum (floor) price may be set, and/or a suggested price may be indicated as guidance for the buyer. The buyer can also select an amount higher than the standard price for the commodity. If the floor price is set, use <em>minPrice</em> attribute.</td>
+</tr>
+<tr>
+<td><strong>maxTransactionQuantity</strong></td>
+<td>Integer</td>
+<td>Integer</td>
+<td><strong>REQUIRED</strong> The maximum transaction quantity for the given billing duration. Use this to define for example monthly (or any other period) request limit to the data product. Note! If you want to set unlimited use, value must be 0 (zero).</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h2 id='optional-attributes-and-elements'>Optional attributes and elements</h2>
+<blockquote>
+<p>Example of Pricing component usage with some of the optional elements and attributes:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">pricing</span><span class="dl">"</span><span class="p">{</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">minPrice</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">15.000</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">additionalPrice</span><span class="dl">"</span><span class="p">:</span> <span class="mf">0.02</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium Package</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">20.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">valueAddedTaxIncluded</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span>
+       <span class="p">}</span>
+   <span class="p">}</span>
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>minPrice</td>
+<td>string</td>
+<td>-</td>
+<td>The lowest price if the price is a range. If dynamic pricing is used with this product, this is the lowest price allowed. In dynamic pricing businesses are able to change prices based on algorithms that take into account competitor pricing, supply and demand, and other external factors in the market. Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols.</td>
+</tr>
+<tr>
+<td>maxPrice</td>
+<td>string</td>
+<td>-</td>
+<td>The highest price if the price is a range. If dynamic pricing is used with this product, this is the highest price allowed. Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols.</td>
+</tr>
+<tr>
+<td>valueAddedTaxIncluded</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.</td>
+</tr>
+<tr>
+<td>valueAddedTaxPercentage</td>
+<td>Integer</td>
+<td>Number percentage value, range 0-100</td>
+<td>Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols.</td>
+</tr>
+<tr>
+<td>validFrom</td>
+<td>DateTime</td>
+<td>A combination of date and time in <a href="https://www.ionos.com/digitalguide/websites/web-development/iso-8601/">ISO 8601</a> format yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ.</td>
+<td>The date when the item becomes valid.</td>
+</tr>
+<tr>
+<td>validTo</td>
+<td>DateTime</td>
+<td>A combination of date and time in <a href="https://www.ionos.com/digitalguide/websites/web-development/iso-8601/">ISO 8601</a> format yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ.</td>
+<td>The date after when the item is not valid.</td>
+</tr>
+<tr>
+<td>additionalPrice</td>
+<td>string</td>
+<td>-</td>
+<td>This is used to define fees for usage which exceeds the defined max transaction quantity. This value is for each additional transaction. Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols.</td>
+</tr>
+<tr>
+<td>maxDataQuantity</td>
+<td>Integer</td>
+<td>-</td>
+<td>The maximum amount of data transferred during the billing duration. Unit is GB.</td>
+</tr>
+</tbody></table>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h1 id='dataops'>DataOps</h1>
+<p>DataOps is a process whereby a data product pipeline deployment method is defined. Usually the deployment script contains the logic of the individual steps as well as the code chaining the steps together.</p>
+
+<p>DataOps Object&#39;s purpose is enabling building, deploying, and running the data product’s code, and storing and giving access to data and metadata. This priciple has been adopted from the <a href="https://towardsdatascience.com/what-is-a-data-mesh-and-how-not-to-mesh-it-up-210710bb41e0">Data Mesh</a>.</p>
+
+<blockquote>
+<p>Example of DataOps component usage:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>
+<span class="dl">"</span><span class="s2">dataOps</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">infrastructure</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">platform</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Azure</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">storageTechnology</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Azure SQL</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">storageType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sql</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">containerTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">helm</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">yaml</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/rundatapipeline.yml</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">deploymentDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/datapipeline</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">hashType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SHA-2</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">checksum</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>infrastructure</td>
+<td>element</td>
+<td>-</td>
+<td>Infrastructure is a process whereby a data product pipeline deployment method is defined.</td>
+</tr>
+<tr>
+<td>platform</td>
+<td>string</td>
+<td>any</td>
+<td>Platform infrastructure, such as AWS, GCP, Azure.</td>
+</tr>
+<tr>
+<td>storageTechnology</td>
+<td>string</td>
+<td>any</td>
+<td>Describes the internal storage area technology, such as Amazon S3, Google Cloud Storage, Azure Blob Storage, Azure SQL.</td>
+</tr>
+<tr>
+<td>storageType</td>
+<td>string</td>
+<td>any</td>
+<td>Describes the internal storage type, such as files, sql, events, MQTT.</td>
+</tr>
+<tr>
+<td>containerTool</td>
+<td>string</td>
+<td>any</td>
+<td>A name of the package manager, container or infrastructure as code tool.</td>
+</tr>
+<tr>
+<td>format</td>
+<td>string</td>
+<td>any</td>
+<td>Type of script language.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td>Options: announcement, draft, development, testing, acceptance, production, sunset, retired.</td>
+<td>Development status.</td>
+</tr>
+<tr>
+<td>scriptURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL of the deployment script.</td>
+</tr>
+<tr>
+<td>deploymentDocumentationURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL of the deployment documentation.</td>
+</tr>
+<tr>
+<td>hashType</td>
+<td>string</td>
+<td>One of: SHA-1, SHA-2, SHA-3</td>
+<td>Type of secure hash algorithm for checksum.</td>
+</tr>
+<tr>
+<td>checksum</td>
+<td>string</td>
+<td>any</td>
+<td>Script checksum.</td>
+</tr>
+</tbody></table>
+<h1 id='data-access'>Data Access</h1>
+<p>Data access is the authorised ability to retrieve, edit, copy or transfer data from IT systems.</p>
+
+<blockquote>
+<p>Example of Data Access component usage:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>
+ <span class="dl">"</span><span class="s2">dataAccess</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">interface</span><span class="dl">"</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">outputPorttype</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">API</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">authenticationMethod</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OAuth</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">specification</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OAS</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">GraphQL</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">specURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://192.168.10.1/petstore.json</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/petshop</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>interface</td>
+<td>element</td>
+<td>-</td>
+<td>Reference to the ability to use data.</td>
+</tr>
+<tr>
+<td>outputPorttype</td>
+<td>string</td>
+<td>any</td>
+<td>Type of data access, such as API, SQL, sFTP, gRPC.</td>
+</tr>
+<tr>
+<td>authenticationMethod</td>
+<td>string</td>
+<td>any</td>
+<td>Data access authentication method type, such as API key, HTTP Basic, OAuth, No authentication.</td>
+</tr>
+<tr>
+<td>specification</td>
+<td>string</td>
+<td>any</td>
+<td>Type of the data access specification, such as OAS, RAML, Slate.</td>
+</tr>
+<tr>
+<td>format</td>
+<td>string</td>
+<td>any</td>
+<td>Data access file format type, such as JSON, XML, GraphQL, plain text.</td>
+</tr>
+<tr>
+<td>specsURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL of the specification.</td>
+</tr>
+<tr>
+<td>documentationURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL of the data access documentation.</td>
+</tr>
+</tbody></table>
+<h1 id='data-sla'>Data SLA</h1>
+<p>Data Service Level Agreement (SLA) <strong>Object</strong>** contains attributes which define the desired and promised quality of the data product. </p>
+
+<p>No mandatory attributes at the moment. Optional attributes are listed in own table and an example is given in the right column. </p>
+<h2 id='optional-attributes-and-elements'>Optional attributes and elements</h2>
+<blockquote>
+<p>Example of Quality component usage:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">SLA</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">updateFrequency</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">hours</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">uptime</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">percentage</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">99</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">responseTime</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">milliseconds</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">200</span>
+      <span class="p">}</span>
+      <span class="dl">"</span><span class="s2">nullValues</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">percentage</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mf">0.01</span>
+      <span class="p">}</span>
+      <span class="dl">"</span><span class="s2">support</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">company</span><span class="dl">"</span><span class="p">:</span> 
+         <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">phoneNumber</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">phoneServiceHours</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="dl">"</span><span class="s2">chatURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">chatServiceHours</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">chatResponseTime</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">emailServiceHours</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">emailResponseTime</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">guidesURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">community</span><span class="dl">"</span><span class="p">:</span> 
+         <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">stackoverflowURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">forumURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span> 
+            <span class="dl">"</span><span class="s2">slackURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">twitterURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="dl">"</span><span class="s2">observability</span><span class="dl">"</span><span class="p">:</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">logsURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://logs.com</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">dashboardURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://dashboard.com</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">uptimeURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://uptime.com</span><span class="dl">"</span>
+      <span class="p">}</span> 
+   <span class="p">}</span>
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>updateFrequency</td>
+<td>element</td>
+<td>Options for <em>unit</em> are: milliseconds, seconds, minutes, days, weeks, months, years, never, null. <br/><br/> <em>Value</em> attribute is Integer.</td>
+<td>Name of the quality attribute indicating the timely interval how often data is updated.</td>
+</tr>
+<tr>
+<td>uptime</td>
+<td>element</td>
+<td>Options for <em>unit</em> are: percentage, string, null. <br/><br/> The <em>value</em> attribute can be integer or string &quot;best effort&quot;.</td>
+<td>Uptime is the amount of time that a service is online available and operational. Guaranteed uptime is expressed as SLA level and is generally the most important metric to measure the quality of a hosting provider. An SLA level of 99.99% for example equates to 52 minutes and 36 seconds of downtime per year. in this context uptime is SLA.</td>
+</tr>
+<tr>
+<td>responseTime</td>
+<td>element</td>
+<td><em>Unit</em> options are: milliseconds, seconds, null. <br/><br/><em>Value</em> can be integer or null</td>
+<td>Response time is the total amount of time it takes to respond to a request for service.</td>
+</tr>
+<tr>
+<td>nullValues</td>
+<td>element</td>
+<td><em>Unit</em> is percentage. <br/><br/><em>Value</em> can be integer or null</td>
+<td>Null values is the percentage of null values in the content. This is quite oftenly used as data quality attribute by data scientists.</td>
+</tr>
+<tr>
+<td>support</td>
+<td>element</td>
+<td>-</td>
+<td>Support element describes how the customer can reach for help in case of difficulties in usage, billing, or otherwise. Support can be based on company provided support and community driven support.</td>
+</tr>
+<tr>
+<td>phoneNumber</td>
+<td>string</td>
+<td>-</td>
+<td>The support phone number</td>
+</tr>
+<tr>
+<td>phoneServiceHours</td>
+<td>string</td>
+<td>-</td>
+<td>Describes the service hours company provides. Contains information often in week level eg Mon-Fri at 8am - 4pm.</td>
+</tr>
+<tr>
+<td>chatURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL of chat service to use. Service hours and response time defined in other attributes.</td>
+</tr>
+<tr>
+<td>chatServiceHours</td>
+<td>string</td>
+<td>-</td>
+<td>Describes the chat service hours company provides. Contains information often in week level eg Mon-Fri at 8am - 4pm.</td>
+</tr>
+<tr>
+<td>chatResponseTime</td>
+<td>string</td>
+<td>-</td>
+<td>Describes aimed maximum delay in responding to chat support requests. This doesn&#39;t normally guarantee a resolution to the problem.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>-</td>
+<td>Email information for support requests.</td>
+</tr>
+<tr>
+<td>emailServiceHours</td>
+<td>string</td>
+<td>-</td>
+<td>Describes the email service hours company provides. Contains information often in week level eg Mon-Fri at 8am - 4pm.</td>
+</tr>
+<tr>
+<td>emailResponseTime</td>
+<td>string</td>
+<td>-</td>
+<td>Describes aimed maximum delay in responding to email support requests. This doesn&#39;t normally guarantee a resolution to the problem.</td>
+</tr>
+<tr>
+<td>documentationURL</td>
+<td>URL</td>
+<td>-</td>
+<td>URL to the documentation of the product.</td>
+</tr>
+<tr>
+<td>guidesURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to the guides offering more information and examples about how to use the data product. Guides might be platform specific.</td>
+</tr>
+<tr>
+<td>community</td>
+<td>Element</td>
+<td>-</td>
+<td>Element that contains community based support function information.</td>
+</tr>
+<tr>
+<td>stackoverflowURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to the Stack Overflow. Could be for example list of resolved issues related to the product.</td>
+</tr>
+<tr>
+<td>forumURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to the community forum in which product related support requests can be raised.</td>
+</tr>
+<tr>
+<td>slackURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to the Slack workspace in which product related support requests can be raised.</td>
+</tr>
+<tr>
+<td>twitterURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to the Twitter account for which product related support requests can be raised.</td>
+</tr>
+<tr>
+<td>observability</td>
+<td>element</td>
+<td>-</td>
+<td>Observability is a superset of monitoring. It provides not only high-level overviews of the system’s health but also highly granular insights into the implicit failure modes of the system. In addition, an observable system furnishes ample context about its inner workings, unlocking the ability to uncover deeper, systemic issues.</td>
+</tr>
+<tr>
+<td>logsURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to service which offers access to event logs including errors, response times, call information.</td>
+</tr>
+<tr>
+<td>dashboardURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to dashboard application which visualizes product behaviour. This service should support at least part of the given product quality indicators.</td>
+</tr>
+<tr>
+<td>uptimeURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to service which shows uptime statistics as well as other statistical information. This service should support at least part of the given product quality indicators.</td>
+</tr>
+</tbody></table>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h1 id='data-licensing'>Data Licensing</h1>
+<p>The data product may be exploited e.g. by licensing its use and exploitation to third parties. Machine-readable license as part of the specification is implemented for this purpose. It can be used to conclude various agreements regarding data protection, processing and intellectual property rights (IPR). Data can be protected by one or more intellectual property rights. Principle is that when a third party (Data User) exploits the data, it must have a license or other right from Data Holder to exploit to the data.</p>
+
+<blockquote>
+<p>Example of License Object usage:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>
+<span class="dl">"</span><span class="s2">license</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+   <span class="dl">"</span><span class="s2">scope</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">definition</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">The purpose of this license is to determine the terms and conditions applicable to the licensing of the data product, whereby Data Holder grants Data User the right to use the data.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">language</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">en-us</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">permanent</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">terminationContitions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Cancellation before 30 days. After the expiry of the right of use, the product and its derivatives must be removed.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">continuityConditions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Expired license will automatically continued without written cancellation (termination) by Data Holder</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">restrictions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User agrees not to, directly or indirectly, participate in the unauthorized use, disclosure or conversion of any confidential information.</span><span class="dl">"</span><span class="p">,</span>      
+         <span class="dl">"</span><span class="s2">geographicalArea</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span> 
+            <span class="dl">"</span><span class="s2">EU</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">US</span><span class="dl">"</span>
+         <span class="p">],</span>
+         <span class="dl">"</span><span class="s2">modificationRight</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">resellingRight</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="p">}</span>
+   <span class="dl">"</span><span class="s2">governance</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">containsPersonalData</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">dpaURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/dpaconditions</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">audit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">warranties</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">forceMajeure</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Each party may suspend the fulfilment of its contractual obligations, when the said fulfilment is impossible or objectively too costly due to an unforeseeable impediment independent from the parties, such as for example: strike, boycott, lockout, fire, war (declared or not), civil war, riots and revolutions, requisitions, embargo, power blackouts, extraordinary breakage of machinery, delays in the delivery of components or raw materials.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">damages</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">confidentiality</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license.</span><span class="dl">"</span> 
+         <span class="dl">"</span><span class="s2">applicableLaws</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">This license shall be interpreted, construed and enforced in accordance with the law of Finland, Incl. Copyright Act 404/1961.</span><span class="dl">"</span>
+   <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>scope</td>
+<td>element</td>
+<td>-</td>
+<td>Extent, range, coverage, area or space of the license.</td>
+</tr>
+<tr>
+<td>definition</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Background and purpose of the license.</td>
+</tr>
+<tr>
+<td>language</td>
+<td>string</td>
+<td>ISO 639-1 standard language codes</td>
+<td>License language.</td>
+</tr>
+<tr>
+<td>permanent</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>License with no expiration date.</td>
+</tr>
+<tr>
+<td>termitationConditions</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Cancellation conditions of the license.</td>
+</tr>
+<tr>
+<td>continuityConditions</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Continuity conditions of the license.</td>
+</tr>
+<tr>
+<td>restrictions</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Restrictions of the license.</td>
+</tr>
+<tr>
+<td>geographicalArea</td>
+<td>string</td>
+<td>ISO 3166-1 alpha-2 codes</td>
+<td>License right restricted to the geographical area.</td>
+</tr>
+<tr>
+<td>modificationRights</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>Data modification rights.</td>
+</tr>
+<tr>
+<td>resellingRights</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>Reselling rights.</td>
+</tr>
+<tr>
+<td>governance</td>
+<td>element</td>
+<td>-</td>
+<td>Governance is the approach taken to ensure that the agreed outcomes are being fulfilled.</td>
+</tr>
+<tr>
+<td>containsPersonalData</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>Data contains personal data.</td>
+</tr>
+<tr>
+<td>dpaURL</td>
+<td>URL</td>
+<td>valid URL</td>
+<td>The URL of the Data Processing Agreement (DPA).</td>
+</tr>
+<tr>
+<td>audit</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>License auditing terms.</td>
+</tr>
+<tr>
+<td>warranties</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>License warranties.</td>
+</tr>
+<tr>
+<td>forceMajeure</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Force Majeure</td>
+</tr>
+<tr>
+<td>damages</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right.</td>
+</tr>
+<tr>
+<td>confidentiality</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Restrictions and requirements imposed on the Data User regarding e.g. the use and disclosure of the Data Holder&#39;s confidential information.</td>
+</tr>
+<tr>
+<td>applicableLaws</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Applicable laws, i.e local acts, degrees or law.</td>
+</tr>
+</tbody></table>
+<h1 id='data-holder'>Data Holder</h1>
+<p>DataHolder <strong>Object</strong> describes the <strong>Organization legally allowed to create, develop and publish data products.</strong> </p>
+
+<p><em>Data holder</em> means &quot;a legal person, public body, international organisation, or a natural person who is not a data subject with respect to the specific data in question, which, in accordance with applicable Union or national law, has the right to grant access to or to share certain personal data or non-personal data.&quot; (Data Governance Act)</p>
+
+<p>The <em>data holder</em> might not be the original IPR owner of the data used, but has rights operate with it. The contract or other agreement between Provider and possible data owner is not part of the standard as metadata or licence wise.</p>
+
+<p>Mandatory attributes are listed in separate table and marked with <strong>REQUIRED</strong> text. Next to the mandatory attributes is an example. </p>
+
+<p>The same logic applies to the optional attributes as well. Optional attributes are listed in own table and an example is given in the right column. </p>
+<h2 id='mandatory-attributes-and-elements'>Mandatory attributes and elements</h2>
+<blockquote>
+<p>Example of Provider component mandatory attributes usage:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">dataHolder</span><span class="dl">"</span><span class="p">:</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">legalName</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">MindMote Oy</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">businessId</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">contact@mindmote.fi</span><span class="dl">"</span>
+      <span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>legalName</strong></td>
+<td>string</td>
+<td>text content, max length 256 chars</td>
+<td><strong>REQUIRED</strong> The official name of the organization, e.g. the registered company name.</td>
+</tr>
+<tr>
+<td><strong>businessID</strong></td>
+<td>string</td>
+<td>As defined in <a href="https://datatracker.ietf.org/doc/html/rfc5322">RFC 5322</a></td>
+<td><strong>REQUIRED</strong> The business identifier code of the company. Often this is given to the company by authorized public sector organization managing register of businesses.</td>
+</tr>
+<tr>
+<td><strong>email</strong></td>
+<td>string</td>
+<td>-</td>
+<td><strong>REQUIRED</strong> Email to be used in contacting the organization.</td>
+</tr>
+</tbody></table>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h2 id='optional-attributes-and-elements'>Optional attributes and elements</h2>
+<blockquote>
+<p>Example of Provider component with some of the voluntary attributes:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">dataHolder</span><span class="dl">"</span><span class="p">:</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">taxID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">vatID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://mindmote.fi/logo.png</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Digital Economy services and tools</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">URL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://mindmote.fi</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">telephone</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">+35845 0232 2323</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">streetAddress</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Koulukatu 1</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">postalCode</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">33100</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">addressRegion</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pirkanmaa</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">addressLocality</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Tampere</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">addressCountry</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Finland</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">aggregateRating</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">ratingCount</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1245</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">slogan</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">parentOrganization</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span>
+      <span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>taxID</td>
+<td>string</td>
+<td>-</td>
+<td>The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.</td>
+</tr>
+<tr>
+<td>vatID</td>
+<td>string</td>
+<td>-</td>
+<td>The Value-added Tax ID of the organization or person.</td>
+</tr>
+<tr>
+<td>logoURL</td>
+<td>URL</td>
+<td>Valid URL. See more from <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</td>
+<td>The URL pointing to organisation logo.</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Max length 512 chars</td>
+<td>The introduction to the organization. Often contains information of what the organisation does and focuses on.</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>URL</td>
+<td>Valid URL. See more from <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</td>
+<td>The URL of the organization&#39;s website.</td>
+</tr>
+<tr>
+<td>telephone</td>
+<td>string</td>
+<td>-</td>
+<td>The telephone number.</td>
+</tr>
+<tr>
+<td>streetAddress</td>
+<td>string</td>
+<td>-</td>
+<td>The street address. For example, 1600 Amphitheatre Pkwy.</td>
+</tr>
+<tr>
+<td>postalCode</td>
+<td>string</td>
+<td>-</td>
+<td>The postal code. For example, 94043.</td>
+</tr>
+<tr>
+<td>addressRegion</td>
+<td>string</td>
+<td>-</td>
+<td>The region in which the locality is, and which is in the country. For example, California or another appropriate first-level Administrative division</td>
+</tr>
+<tr>
+<td>addressLocality</td>
+<td>string</td>
+<td>-</td>
+<td>The locality in which the street address is, and which is in the region. For example, Mountain View.</td>
+</tr>
+<tr>
+<td>addressCountry</td>
+<td>string</td>
+<td>two-letter ISO 3166-1 alpha-2 country code</td>
+<td>The country.</td>
+</tr>
+<tr>
+<td>aggregateRating</td>
+<td>string</td>
+<td>-</td>
+<td>The average rating based on multiple ratings or reviews.</td>
+</tr>
+<tr>
+<td>ratingCount</td>
+<td>integer</td>
+<td>-</td>
+<td>The amount of ratigns and reviews used in calculating the aggregateRating.</td>
+</tr>
+<tr>
+<td>slogan</td>
+<td>string</td>
+<td>Max length 256 chars</td>
+<td>The slogan of the organization. This is often related to showing the brand</td>
+</tr>
+<tr>
+<td>parentOrganization</td>
+<td>string</td>
+<td>-</td>
+<td>The larger organization that this organization is a subOrganization of, if any.</td>
+</tr>
+</tbody></table>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h1 id='specification-extensions'>Specification extensions</h1>
+<p>While the Open Data Product Specification tries to accommodate most use cases, additional data can be added to extend the specification at certain points.</p>
+
+<p>The extensions properties are implemented as patterned fields that are always prefixed by &quot;x-&quot;. The extensions may or may not be supported by the available tooling, but those may be extended as well to add requested support (if tools are internal or open-sourced). Open Data Product Initiative Technical Steering Committee does not officially approve external extensions - they are fully independent. Popular extensions however are natural candidates for future additions of the standard. </p>
+
+<blockquote>
+<p>Example of extension usage:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">x-internal-id</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">foobar123</span><span class="dl">"</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>^x-</td>
+<td>any</td>
+<td></td>
+<td>Allows extensions to the Open Data Product Schema. The field name MUST begin with x-, for example, x-internal-id. The value can be null, a primitive, an array or an object. Can have any valid JSON format value.</td>
+</tr>
+</tbody></table>
+<h1 id='hello-world-example'>Hello world example</h1>
+<p>You&#39;ll find a complete machine-readbale example of a data product from the right column. It is imaginary data product <em>Pets of the year</em> which contains derived data about the most common pets in the world. The product has 4 pricing plans which are mostly based on recurring subscription model. Note! Not all voluntary attributes are used in the example.  </p>
+
+<blockquote>
+<p>Example of complete working Data Product specification instance:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">categories</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">],</span>
+        <span class="dl">"</span><span class="s2">tags</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pet</span><span class="dl">"</span><span class="p">],</span>
+        <span class="dl">"</span><span class="s2">brandSlogan</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Passion for the data monetization</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">derived data</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">pricing</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">50.00</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">year</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">unlimited</span><span class="dl">"</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium Package Monthly</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">10000</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Freemium Package</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0.00</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1000</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Revenue sharing</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">percentage</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.50</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">revenue-sharing</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">20000</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+
+    <span class="dl">"</span><span class="s2">dataOps</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">infrastructure</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">platform</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Azure</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">storageTechnology</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Azure SQL</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">storageType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sql</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">containerTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">helm</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">yaml</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/rundatapipeline.yml</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">deploymentDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/datapipeline</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">hashType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SHA-2</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">checksum</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921</span><span class="dl">"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">dataAccess</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">API</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">authenticationMethod</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OAuth</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">specification</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OAS</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">JSON</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">specURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://swagger.com/petstore.json</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">dataAccessDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/test/docs/dataaccess</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">SLA</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">updateFrequency</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">hours</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">uptime</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">percentage</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">99</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">responseTime</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">milliseconds</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">200</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">nullValues</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">percentage</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mf">0.01</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">support</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">company</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">phoneNumber</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">phoneServiceHours</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">chatURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">chatServiceHours</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">chatResponseTime</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">emailServiceHours</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">emailResponseTime</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">guidesURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="p">},</span>
+            <span class="dl">"</span><span class="s2">community</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">stackoverflowURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">forumURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">slackURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">twitterURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">observability</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">logsURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://logs.com</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">dashboardURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://dashboard.com</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">uptimeURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://uptime.com</span><span class="dl">"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">license</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">scope</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">definition</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">The purpose of this license is to determine the terms and conditions applicable to the licensing of the data product, whereby Data Holder grants Data User the right to use the data.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">language</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">en-us</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">permanent</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">terminationContitions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Cancellation before 30 days. After the expiry of the right of use, the product and its derivatives must be removed.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">continuityConditions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Expired license will automatically continued without written cancellation (termination) by Data Holder</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">restrictions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User agrees not to, directly or indirectly, participate in the unauthorized use, disclosure or conversion of any confidential information.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">geographicalArea</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="dl">"</span><span class="s2">EU</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">US</span><span class="dl">"</span>
+            <span class="p">],</span>
+            <span class="dl">"</span><span class="s2">modificationRight</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">resellingRight</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">governance</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">containsPersonalData</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">dpaURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/dpaconditions</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">audit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">warranties</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">forceMajeure</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Each party may suspend the fulfilment of its contractual obligations, when the said fulfilment is impossible or objectively too costly due to an unforeseeable impediment independent from the parties, such as for example: strike, boycott, lockout, fire, war (declared or not), civil war, riots and revolutions, requisitions, embargo, power blackouts, extraordinary breakage of machinery, delays in the delivery of components or raw materials.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">damages</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">confidentiality</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">applicableLaws</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">This license shall be interpreted, construed and enforced in accordance with the law of Finland, Incl. Copyright Act 404/1961.</span><span class="dl">"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">dataHolder</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">taxID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">vatID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://mindmote.fi/logo.png</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Digital Economy services and tools</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">URL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://mindmote.fi</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">telephone</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">+35845 0232 2323</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">streetAddress</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Koulukatu 1</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">postalCode</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">33100</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">addressRegion</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pirkanmaa</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">addressLocality</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Tampere</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">addressCountry</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Finland</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">aggregateRating</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">ratingCount</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1245</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">slogan</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">parentOrganization</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h1 id='terms-used'>Terms used</h1>
+<p>Here&#39;s list of terms used and what we mean with them. The meaning of terms is mostly taken from existing knowledge eg articles and other trusted sources. The source is always linked to the term. In some rare cases term is defined for the specification purposes only. </p>
+
+<table><thead>
+<tr>
+<th><div style="width:150px">Term</div></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Data point</td>
+<td></td>
+</tr>
+<tr>
+<td>Data product</td>
+<td>As a strategic resource for companies, data is considered an asset that, like any other material good, has a financial value and whose management generates costs. Data created, collected or used in individual business processes can be sold to other organisations as raw or processed data, so that it no longer serves as an enabler of products, but is the product itself. This leads to the paradigm that data assets can be monetised by exchanging and trading data between organisations as data products and services. <br/><br/> There are multiple definitions for data product. In an <a href="https://arxiv.org/abs/2009.04462">article authored by Jian Pei (2020)</a>, data products &quot;<em>refer to data sets as products and information services derived from data sets.</em>&quot; Simon O&#39;Regan&#39;s defines data product as <em>a product whose primary objective is to use data to facilitate an end goal</em>. From the academic literature we have found several subtypes of data products: raw data, derived data, data sets, reports, analytic views, 3D visualisations, algorithms, decision support (dashboards) and automated decision-making (Netflix product recommendations or Spotify’s Discover Weekly would be common examples). <br/><br/>Typically raw data, derived data and algorithms have technical users. Most often they tend to be internal products in an organisation. <br/><br/> If we dive in the data mesh world, this quote from <a href="https://www.oreilly.com/library/view/data-mesh/9781492092384/">Zhamak Dehghani’s book</a> is key to understand the definition of data as a product: “<em>Domain data teams must apply product thinking […] to the datasets that they provide; considering their data assets as their products and the rest of the organization’s data scientists, ML and data engineers as their customers.</em>”<br/><br/>While many of the standard Product Development Rules apply — solve a customer need, learn from feedback, prioritise relentlessly, etc. — data has different characteristics compared to tangible products that prevent the direct transfer of established processes and rules of trading goods, especially in terms of pricing mechanisms. <br/> <br/>In trading data, there is less willingness to pay. For example, data buyers often do not recognise the potential value of data items because it cannot be fully disclosed prior to purchase (known as the ‘Arrow paradox’). <br/><br/>In addition, there is often a lack of notion that the creation, processing, storage and distribution of high-quality data is a major cost factor for the data provider. Another obstacle is the lack of trust and security causing potential data providers to fear that competitors could benefit from disclosure of in-house data. <br/><br/>One of the aims of this specification is to tackle above mentioned issues which hinder the growth of data ecosystem and market volatility.</td>
+</tr>
+<tr>
+<td>Data as a service</td>
+<td><a href="https://en.wikipedia.org/wiki/Data_as_a_service">In computing, data as a service, or DaaS</a>, is a term used to describe cloud-based software tools used for working with data, such as managing data in a data warehouse or analyzing data with business intelligence. It is enabled by software as a service (SaaS). DaaS like all &quot;as a service&quot; (aaS) technology, builds on the concept that its data product can be provided to the user on demand, regardless of geographic or organizational separation between provider and consumer. <br/><br/> <a href="https://www.forbes.com/sites/danielnewman/2017/02/07/data-as-a-service-the-big-opportunity-for-business/">According to Daniel Newman from Forbes (2017)</a> DaaS is essentially a data stream that subscribers can access on demand.  <br/><br/> Some people use the term data product in a meaning which contains also data commodities which have more service alike attributes than product attributes. In those cases we prefer to use the term <em>data as a service</em> and call the creation process as <em>data servitization</em>. The term <em>productizement</em> is reserved for the process which creates data products as end result.</td>
+</tr>
+<tr>
+<td>Data as a service business model</td>
+<td>Data as a service as a business model is a concept when two or more organizations buy, sell, or trade machine-readable data in exchange for something of value. Data as a service is a general term that encompasses data-related services. Now DaaS service providers are replacing traditional data analytics services or happily clustering with existing services to offer more value-addition to customers. The DaaS providers are curating, aggregating, analyzing multi-source data in order to provide additional more valuable analytical data or information. <br/><br/> Typically, DaaS business is based on subscriptions and customers pay for a package of services or definite services.</td>
+</tr>
+<tr>
+<td>Data pipeline</td>
+<td>According to <a href="https://research.chalmers.se/publication/523476/file/523476_Fulltext.pdf">Aiswarya et al.</a> the complex chain of interconnected activities or processes from data gen- eration through data reception constitutes a data pipeline. In other words, data pipelines are the connected chain of processes where the output of one or more processes becomes an input for another. It is a piece of software that removes many manual steps from the workflow and permits a streamlined, automated flow of data from one node to another. Moreover, it automates the operations involved in the selection, extraction, transformation, aggregation, validation, and loading of data for further analysis and visualization. It offers end to end speed by removing errors and resisting bottlenecks or delay. Data pipelines can process multiple streams of data simultaneously</td>
+</tr>
+</tbody></table>
+<h1 id='editors-and-contributors'>Editors and contributors</h1>
+<p>This specification is openly developed and a lot of the work comes from community. We list all community contributors as a sign of appreciation. The editors (as initial creators of the the specification) are Jarkko Moilanen and Jussi Niilahti. Editors take the feedback and draft new candidate releases, which may become the versions of the specification. </p>
+<h2 id='list-of-community-contributors'>List of community contributors</h2>
+<p>The work around the specification would not be possible without enormous help from the community. Here&#39;s list of contributors so far. </p>
+
+<ul>
+<li>Toni Luhti</li>
+<li>Topi Santakivi</li>
+</ul>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="JSON">JSON</a>
+          </div>
+      </div>
+    </div>
+    <!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nztzi');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+  </body>
+</html>
