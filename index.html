@@ -837,6 +837,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
     <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">yaml</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/rundatapipeline.yml</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">dataLineageOutput</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/lineage.json</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">dataLineageTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Collibra</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">deploymentDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/datapipeline</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">hashType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SHA-2</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">checksum</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921</span><span class="dl">"</span>
@@ -899,6 +901,18 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>URL</td>
 <td>Valid URL</td>
 <td>The URL of the deployment script. Script can be used for implementing the data product. In a Data Mesh -model it can be used to define, for example, one or more outputs which take the data from source systems or other data products.</td>
+</tr>
+<tr>
+<td>datalineageOutput</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL of the data lineage output. Data lineage output shows the mapping of source data to target output on a metadata level</td>
+</tr>
+<tr>
+<td>datalineageTool</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>A tool to view the data lineage.</td>
 </tr>
 <tr>
 <td>deploymentDocumentationURL</td>
@@ -986,7 +1000,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>documentationURL</td>
 <td>URL</td>
 <td>Valid URL</td>
-<td>The URL of the data access documentation or guide.</td>
+<td>The URL of the separated data access documentation or guide. For example, it may contain instructions on how to create and manage api keys.</td>
 </tr>
 </tbody></table>
 <h1 id='data-sla'>Data SLA</h1>
