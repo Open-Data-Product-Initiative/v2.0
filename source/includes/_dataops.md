@@ -35,7 +35,7 @@ DataOps **OBJECT** describes building, deploying, and running data product's cod
 | containerTool | string | any | A name of the package manager, container or infrastructure as code tool. |
 | format | string  | any |  Type of script language.|
 | status | string  | Options: announcement, draft, development, testing, acceptance, production, sunset, retired. | Development status. |
-| scriptURL | URL | Valid URL  | 	The URL of the deployment script. |
+| scriptURL | URL | Valid URL  | 	The URL of the deployment script. Script can be used for implementing the data product. In a Data Mesh -model it can be used to define, for example, one or more outputs which take the data from source systems or other data products.|
 | datalineageOutput | URL | Valid URL  | 	The URL of the data lineage output. Data lineage output shows the mapping of source data to target output on a metadata level |
 | datalineageTool | URL | Valid URL  | 	A tool to view the data lineage. |
 | deploymentDocumentationURL | URL | Valid URL  | 	The URL of the deployment documentation. |
