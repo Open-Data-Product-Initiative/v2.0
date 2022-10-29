@@ -26,4 +26,4 @@ Data Access **OBJECT** describes the authorised ability to retrieve, edit, copy 
 | specification | string | any  | Type of the data access specification, such as OAS, RAML, Slate. |
 | format | string | any | 	Data access file format type, such as JSON, XML, GraphQL, plain text. |
 | specsURL | URL | Valid URL | 	The URL of the data access documentation, preferably in a machine-readable format, such as OpenAPI specs. |
-| documentationURL | URL | Valid URL  | The URL of the data access documentation or guide.|
+| documentationURL | URL | Valid URL  | The URL of the separated data access documentation or guide. For example, it may contain instructions on how to create and manage api keys.|
