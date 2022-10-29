@@ -33,7 +33,7 @@ DataOps **OBJECT** describes building, deploying, and running data product's cod
 | containerTool | string | any | A name of the package manager, container or infrastructure as code tool. |
 | format | string  | any |  Type of script language.|
 | status | string  | Options: announcement, draft, development, testing, acceptance, production, sunset, retired. | Development status. |
-| scriptURL | URL | Valid URL  | 	The URL of the deployment script. |
+| scriptURL | URL | Valid URL  | 	The URL of the deployment script. Script can be used for implementing the data product. In a Data Mesh -model it can be used to define, for example, one or more outputs which take the data from source systems or other data products.|
 | deploymentDocumentationURL | URL | Valid URL  | 	The URL of the deployment documentation. |
 | hashType| string | One of: SHA-1, SHA-2, SHA-3 | Type of secure hash algorithm for checksum. |
 | checksum| string | any  | 	Script checksum. |
