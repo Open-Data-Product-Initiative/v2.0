@@ -42,7 +42,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | definition | string | text content, max length 512 chars  | Background and purpose of the license. |
 | language | string | ISO 639-1 standard language codes | License language. |
 | permanent | boolean | true/false|  License with no expiration date. |
-| termitationConditions | string | text content, max length 512 chars | Cancellation conditions of the license. |
+| terminationConditions | string | text content, max length 512 chars | Cancellation conditions of the license. |
 | continuityConditions | string |  text content, max length 512 chars | Continuity conditions of the license. |
 | restrictions | string | text content, max length 512 chars  | Restrictions of the license. |
 | geographicalArea | string |  ISO 3166-1 alpha-2 codes | License right restricted to the geographical area. |
