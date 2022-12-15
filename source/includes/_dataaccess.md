@@ -22,6 +22,8 @@ Data Access **OBJECT** describes the authorised ability to retrieve, edit, copy 
 |---|---|---|---|
 | interface | element | - | Reference to the ability to use data. |
 | outputPorttype | string | any  | 	Type of data access, such as API, SQL, sFTP, gRPC. |
+| hashType | string | any | Type of secure hash algorithm, such as SHA-1, SHA-2, for checksum, when outputs are files.  |
+| checksum | string | any | file checksum. |
 | authenticationMethod | string | any  | Data access authentication method type, such as API key, HTTP Basic, OAuth, No authentication. |
 | specification | string | any  | Type of the data access specification, such as OAS, RAML, Slate. |
 | format | string | any | 	Data access file format type, such as JSON, XML, GraphQL, plain text. |
