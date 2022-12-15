@@ -167,7 +167,7 @@ Here's the list of attributes which can occur at the document root level. In the
 | valueProposition | string  | text content, max length 512 chars  | This is the product's value proposition. Often one or two sentences and crystallizes the value for the customer. |
 | description | string | - | The description of the product. Text only. |
 | categories| array | - | Comma separates array of categories. |
-| standards| array | - | Comma separates array of standards related e.g. to data content or quality. |
+| standards| array | - | Comma separates array of standards related e.g. to data content or quality, such as ISO 8000 or ISO 19131. |
 | tags| array | - | Comma separates array of tags. |
 | version | string | The versioning scheme is **major.minor.**. Examples: 1.0, 2.1, 3.15 | The version of the product. |
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
