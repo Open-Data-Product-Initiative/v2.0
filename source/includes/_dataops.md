@@ -17,9 +17,9 @@ DataOps **OBJECT** describes building, deploying, and running data product's cod
     "format": "yaml",
     "status": "development",
     "scriptURL": "http://192.168.10.1/rundatapipeline.yml",
+    "deploymentDocumentationURL": "http://192.168.10.1/datapipeline",
     "dataLineageOutput": "http://192.168.10.1/lineage.json",
     "dataLineageTool": "Collibra",
-    "deploymentDocumentationURL": "http://192.168.10.1/datapipeline",
     "hashType": "SHA-2",
     "checksum": "7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921"
   }
@@ -36,8 +36,8 @@ DataOps **OBJECT** describes building, deploying, and running data product's cod
 | format | string  | any |  Type of script language.|
 | status | string  | Options: announcement, draft, development, testing, acceptance, production, sunset, retired. | Development status. |
 | scriptURL | URL | Valid URL  | 	The URL of the deployment script. Script can be used for implementing the data product. In a Data Mesh -model it can be used to define, for example, one or more outputs which take the data from source systems or other data products.|
-| datalineageOutput | URL | Valid URL  | 	The URL of the data lineage output. Data lineage output shows the mapping of source data to target output on a metadata level |
-| datalineageTool | URL | Valid URL  | 	A tool to view the data lineage. |
 | deploymentDocumentationURL | URL | Valid URL  | 	The URL of the deployment documentation. |
+| datalineageTool | URL | Valid URL  | 	A tool to view the data lineage. |
+| datalineageOutput | URL | Valid URL  | 	The URL of the data lineage output. Data lineage output shows the mapping of source data to target output on a metadata level |
 | hashType| string | One of: SHA-1, SHA-2, SHA-3 | Type of secure hash algorithm for checksum. |
 | checksum| string | any  | 	Script checksum. |
