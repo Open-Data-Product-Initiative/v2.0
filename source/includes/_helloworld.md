@@ -14,6 +14,7 @@ You'll find a complete machine-readbale example of a data product from the right
 		"status": "draft",
 		"version": "0.1",
 		"categories": ["pets"],
+    "standards": ["ISO 24631-6"],
 		"tags": ["pet"],
 		"brandSlogan": "Passion for the data monetization",
 		"type": "derived data",
@@ -63,6 +64,8 @@ You'll find a complete machine-readbale example of a data product from the right
 			"status": "development",
 			"scriptURL": "http://192.168.10.1/rundatapipeline.yml",
 			"deploymentDocumentationURL": "http://192.168.10.1/datapipeline",
+      "dataLineageOutput": "http://192.168.10.1/lineage.json",
+      "dataLineageTool": "Collibra"
 			"hashType": "SHA-2",
 			"checksum": "7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921"
 		}
