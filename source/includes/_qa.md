@@ -17,7 +17,7 @@ The values of the QA attributes are given by the vendor. Should you trust in the
          "timeliness": "high",
          "validity": 100,
          "uniqueness": 100,
-         "dataQualityAssuranceMethods": "Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use   by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment."
+         "dataQualityAssuranceMethods": "Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment."
       }
       
 ```
