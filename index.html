@@ -1260,7 +1260,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
          <span class="dl">"</span><span class="s2">consistency</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">timeliness</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">high</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">validity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">uniqueness</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span>
+         <span class="dl">"</span><span class="s2">uniqueness</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">dataQualityAssuranceMethods</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use   by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment.</span><span class="dl">"</span>
       <span class="p">}</span>
 
 </code></pre></div>
@@ -1307,6 +1308,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>integer</td>
 <td>percentage</td>
 <td>“Unique” information means that there’s only one instance of it appearing in a database. As we know, data duplication is a frequent occurrence. “Daniel A. Robertson” and “Dan A. Robertson” may well be the same person. Meeting this data quality dimension involves reviewing your information to ensure that none of it is duplicated.</td>
+</tr>
+<tr>
+<td>dataQualityAssuranceMethods</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Description of the data product quality assurance methods and tools used.</td>
 </tr>
 </tbody></table>
 
