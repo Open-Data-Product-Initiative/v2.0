@@ -4,6 +4,8 @@ Data quality is essential for one main reason: You give customers the best exper
 
 The values of the QA attributes are given by the vendor. Should you trust in the values, is the choice made by the data consumer. If possbile utilize automatic checking of data quality against the source and update the values accordingly. 
 
+The QA object is general in nature and should be enough for common (80%) of the use cases. Note that you can make extensions to the standard with "x-" mechanism in order to fulfill any industry specific needs. The "Specification extensions" section provides details on how to use this feature. 
+
 ## Optional attributes and elements
 
 > Example of Data Quality component with some of the voluntary attributes:
