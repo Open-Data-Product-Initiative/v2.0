@@ -6,6 +6,8 @@ The values of the QA attributes are given by the vendor. Should you trust in the
 
 The QA object is general in nature and should be enough for common (80%) of the use cases. Note that you can make extensions to the standard with "x-" mechanism in order to fulfill any industry specific needs. The "Specification extensions" section provides details on how to use this feature. 
 
+Data integrity is the maintenance of, and the assurance of, data accuracy and consistency over its entire life-cycle. That is why *integrity* is not in the attributes, but accuracy and consistency as well as completeness are. 
+
 ## Optional attributes and elements
 
 > Example of Data Quality component with some of the voluntary attributes:
