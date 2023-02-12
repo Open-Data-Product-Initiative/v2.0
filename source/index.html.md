@@ -16,6 +16,7 @@ includes:
   - dataops
   - dataaccess
   - sla
+  - qa
   - license
   - provider
   - extensions
