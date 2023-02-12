@@ -17,7 +17,7 @@ The values of the QA attributes are given by the vendor. Should you trust in the
          "timeliness": "high",
          "validity": 100,
          "uniqueness": 100,
-         "dataQualityAssuranceMethods": "Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment"
+         "dataQualityAssuranceMethods": "Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment."
       }
       
 ```
@@ -30,7 +30,7 @@ The values of the QA attributes are given by the vendor. Should you trust in the
 | timeliness | string | one of: low, medium, high | Is your information available right when it’s needed? That data quality dimension is called “timeliness.” Let’s say that you need financial information every quarter; if the data is ready when it’s supposed to be, it’s timely. The data quality dimension of timeliness is a user expectation.  |
 | validity | integer | percentage | Validity is a data quality dimension that refers to information that doesn’t conform to a specific format or doesn’t follow business rules. A popular example is birthdays – many systems ask you to enter your birthday in a specific format, and if you don’t, it’s invalid. To meet this data quality dimension, you must check if all of your information follows a specific format or business rules. |
 | uniqueness | integer | percentage | “Unique” information means that there’s only one instance of it appearing in a database. As we know, data duplication is a frequent occurrence. “Daniel A. Robertson” and “Dan A. Robertson” may well be the same person. Meeting this data quality dimension involves reviewing your information to ensure that none of it is duplicated. |
-| dataQualityAssuranceMethods | string | text content, max length 512 chars | Description of the data product quality assurance methods and tools used  |
+| dataQualityAssuranceMethods | string | text content, max length 512 chars | Description of the data product quality assurance methods and tools used.  |
 
 
 
