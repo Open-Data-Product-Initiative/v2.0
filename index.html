@@ -381,6 +381,14 @@
               </ul>
           </li>
           <li>
+            <a href="#data-quality" class="toc-h1 toc-link" data-title="Data Quality">Data Quality</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#optional-attributes-and-elements" class="toc-h2 toc-link" data-title="Optional attributes and elements">Optional attributes and elements</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#data-licensing" class="toc-h1 toc-link" data-title="Data Licensing">Data Licensing</a>
           </li>
           <li>
@@ -845,8 +853,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
     <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/rundatapipeline.yml</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">deploymentDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/datapipeline</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">dataLineageOutput</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/lineage.json</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">dataLineageTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Collibra</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">dataLineageOutput</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/lineage.json</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">hashType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SHA-2</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">checksum</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921</span><span class="dl">"</span>
   <span class="p">}</span>
@@ -1233,6 +1241,72 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>URL</td>
 <td>Valid URL</td>
 <td>URL to service which shows uptime statistics as well as other statistical information. This service should support at least part of the given product quality indicators.</td>
+</tr>
+</tbody></table>
+
+<p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h1 id='data-quality'>Data Quality</h1>
+<p>Data quality is essential for one main reason: You give customers the best experience when you make decisions using accurate data. A great customer experience leads to happy customers, brand loyalty, and higher revenue for your business. Information is only valuable if it is of high quality.  How can you assess your data quality? Data quality meets six dimensions: accuracy, completeness, consistency, timeliness, validity, and uniqueness. </p>
+
+<p>The values of the QA attributes are given by the vendor. Should you trust in the values, is the choice made by the data consumer. If possbile utilize automatic checking of data quality against the source and update the values accordingly. </p>
+<h2 id='optional-attributes-and-elements'>Optional attributes and elements</h2>
+<blockquote>
+<p>Example of Data Quality component with some of the voluntary attributes:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">dataQuality</span><span class="dl">"</span><span class="p">:</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">accuracy</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">completeness</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">consistency</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">timeliness</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">high</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">validity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">uniqueness</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span>
+      <span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>accuracy</td>
+<td>integer</td>
+<td>percentage</td>
+<td>The term “accuracy” refers to the degree to which information accurately reflects an event or object described. For example, if a customer’s age is 32, but the system says she’s 34, that information is inaccurate.</td>
+</tr>
+<tr>
+<td>completeness</td>
+<td>integer</td>
+<td>percentage</td>
+<td>Data is considered “complete” when it fulfills expectations of comprehensiveness. Let’s say that you ask the customer to supply his or her name. You might make a customer’s middle name optional, but as long as you have the first and last name, the data is complete.</td>
+</tr>
+<tr>
+<td>consistency</td>
+<td>integer</td>
+<td>percentage</td>
+<td>At many companies, the same information may be stored in more than one place. If that information matches, it’s considered “consistent.” For example, if your human resources information systems say an employee doesn’t work there anymore, yet your payroll says he’s still receiving a check, that’s inconsistent.</td>
+</tr>
+<tr>
+<td>timeliness</td>
+<td>string</td>
+<td>one of: low, medium, high</td>
+<td>Is your information available right when it’s needed? That data quality dimension is called “timeliness.” Let’s say that you need financial information every quarter; if the data is ready when it’s supposed to be, it’s timely. The data quality dimension of timeliness is a user expectation.</td>
+</tr>
+<tr>
+<td>validity</td>
+<td>integer</td>
+<td>percentage</td>
+<td>Validity is a data quality dimension that refers to information that doesn’t conform to a specific format or doesn’t follow business rules. A popular example is birthdays – many systems ask you to enter your birthday in a specific format, and if you don’t, it’s invalid. To meet this data quality dimension, you must check if all of your information follows a specific format or business rules.</td>
+</tr>
+<tr>
+<td>uniqueness</td>
+<td>integer</td>
+<td>percentage</td>
+<td>“Unique” information means that there’s only one instance of it appearing in a database. As we know, data duplication is a frequent occurrence. “Daniel A. Robertson” and “Dan A. Robertson” may well be the same person. Meeting this data quality dimension involves reviewing your information to ensure that none of it is duplicated.</td>
 </tr>
 </tbody></table>
 
