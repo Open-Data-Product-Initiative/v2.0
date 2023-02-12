@@ -14,7 +14,7 @@ You'll find a complete machine-readbale example of a data product from the right
 		"status": "draft",
 		"version": "0.1",
 		"categories": ["pets"],
-    "standards": ["ISO 24631-6"],
+		"standards": ["ISO 24631-6"],
 		"tags": ["pet"],
 		"brandSlogan": "Passion for the data monetization",
 		"type": "derived data",
@@ -54,39 +54,38 @@ You'll find a complete machine-readbale example of a data product from the right
 		}
 	],
 
-"dataOps": {
-  "infrastructure": {
-    "platform": "Azure",
-    "storageTechnology": "Azure SQL",
-    "storageType": "sql",
-    "containerTool": "helm",
-    "format": "yaml",
-    "status": "development",
-    "scriptURL": "http://192.168.10.1/rundatapipeline.yml",
-    "deploymentDocumentationURL": "http://192.168.10.1/datapipeline",
-    "dataLineageTool": "Collibra",
-    "dataLineageOutput": "http://192.168.10.1/lineage.json",
-    "hashType": "SHA-2",
-    "checksum": "7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921"
-  }
-},
+	"dataOps": {
+		"infrastructure": {
+			"platform": "Azure",
+			"storageTechnology": "Azure SQL",
+			"storageType": "sql",
+			"containerTool": "helm",
+			"format": "yaml",
+			"status": "development",
+			"scriptURL": "http://192.168.10.1/rundatapipeline.yml",
+			"deploymentDocumentationURL": "http://192.168.10.1/datapipeline",
+			"dataLineageTool": "Collibra",
+			"dataLineageOutput": "http://192.168.10.1/lineage.json",
+			"hashType": "SHA-2",
+			"checksum": "7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921"
+		}
+	},
 	"dataAccess": {
 		"type": "API",
-    "authenticationMethod": "OAuth",
+		"authenticationMethod": "OAuth",
 		"specification": "OAS",
 		"format": "JSON",
 		"documentationURL": "https://swagger.com/petstore.json"
 	},
-     "dataQuality":
-      {
-         "accuracy": 100,
-         "completeness": 100,
-         "consistency": 100,
-         "timeliness": "high",
-         "validity": 100,
-         "uniqueness": 100,
-         "dataQualityAssuranceMethods": "Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment."
-      },
+	"dataQuality": {
+		"accuracy": 100,
+		"completeness": 100,
+		"consistency": 100,
+		"timeliness": "high",
+		"validity": 100,
+		"uniqueness": 100,
+		"dataQualityAssuranceMethods": "Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment."
+	},
 	"SLA": {
 		"updateFrequency": {
 			"unit": "hours",
