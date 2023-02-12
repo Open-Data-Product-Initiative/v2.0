@@ -1703,7 +1703,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
         <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
         <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
         <span class="dl">"</span><span class="s2">categories</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">],</span>
-    <span class="dl">"</span><span class="s2">standards</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">ISO 24631-6</span><span class="dl">"</span><span class="p">],</span>
+        <span class="dl">"</span><span class="s2">standards</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">ISO 24631-6</span><span class="dl">"</span><span class="p">],</span>
         <span class="dl">"</span><span class="s2">tags</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pet</span><span class="dl">"</span><span class="p">],</span>
         <span class="dl">"</span><span class="s2">brandSlogan</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Passion for the data monetization</span><span class="dl">"</span><span class="p">,</span>
         <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">derived data</span><span class="dl">"</span><span class="p">,</span>
@@ -1743,39 +1743,38 @@ The JSON examples are not based on any real data product, but exemplify the usag
         <span class="p">}</span>
     <span class="p">],</span>
 
-<span class="dl">"</span><span class="s2">dataOps</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-  <span class="dl">"</span><span class="s2">infrastructure</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-    <span class="dl">"</span><span class="s2">platform</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Azure</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">storageTechnology</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Azure SQL</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">storageType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sql</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">containerTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">helm</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">yaml</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/rundatapipeline.yml</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">deploymentDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/datapipeline</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">dataLineageTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Collibra</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">dataLineageOutput</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/lineage.json</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">hashType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SHA-2</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">checksum</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921</span><span class="dl">"</span>
-  <span class="p">}</span>
-<span class="p">},</span>
+    <span class="dl">"</span><span class="s2">dataOps</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">infrastructure</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">platform</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Azure</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">storageTechnology</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Azure SQL</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">storageType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sql</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">containerTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">helm</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">yaml</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/rundatapipeline.yml</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">deploymentDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/datapipeline</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">dataLineageTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Collibra</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">dataLineageOutput</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/lineage.json</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">hashType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SHA-2</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">checksum</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921</span><span class="dl">"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
     <span class="dl">"</span><span class="s2">dataAccess</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
         <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">API</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">authenticationMethod</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OAuth</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">authenticationMethod</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OAuth</span><span class="dl">"</span><span class="p">,</span>
         <span class="dl">"</span><span class="s2">specification</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OAS</span><span class="dl">"</span><span class="p">,</span>
         <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">JSON</span><span class="dl">"</span><span class="p">,</span>
         <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://swagger.com/petstore.json</span><span class="dl">"</span>
     <span class="p">},</span>
-     <span class="dl">"</span><span class="s2">dataQuality</span><span class="dl">"</span><span class="p">:</span>
-      <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">accuracy</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">completeness</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">consistency</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">timeliness</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">high</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">validity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">uniqueness</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">dataQualityAssuranceMethods</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment.</span><span class="dl">"</span>
-      <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">dataQuality</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">accuracy</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">completeness</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">consistency</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">timeliness</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">high</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">validity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">uniqueness</span><span class="dl">"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">dataQualityAssuranceMethods</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment.</span><span class="dl">"</span>
+    <span class="p">},</span>
     <span class="dl">"</span><span class="s2">SLA</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
         <span class="dl">"</span><span class="s2">updateFrequency</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
             <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">hours</span><span class="dl">"</span><span class="p">,</span>
