@@ -77,6 +77,16 @@ You'll find a complete machine-readbale example of a data product from the right
 		"format": "JSON",
 		"documentationURL": "https://swagger.com/petstore.json"
 	},
+     "dataQuality":
+      {
+         "accuracy": 100,
+         "completeness": 100,
+         "consistency": 100,
+         "timeliness": "high",
+         "validity": 100,
+         "uniqueness": 100,
+         "dataQualityAssuranceMethods": "Data quality assurance suite of tools and methods include both data quality auditing (DQA) tools designed for use by external audit teams and routine data quality assessment (RDQA) tools designed for capacity building and self-assessment."
+      },
 	"SLA": {
 		"updateFrequency": {
 			"unit": "hours",
