@@ -36,7 +36,7 @@ meta:
 # OPEN DATA PRODUCT SPECIFICATION
 
 
-## Version 1.1 DEV
+## Development Version 
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.
 
@@ -44,7 +44,7 @@ The specification is shared under <a href='https://creativecommons.org/licenses/
 
 Copyrights 2022 Mindmote Oy. Original creators of the specification: Jarkko Moilanen (igniter), Jussi Niilahti & Toni Luhti
 
-**TO BE PUBLISHED**
+**VERSION 2.0 DERIVED FROM THIS DEVELOPMENT VERSION IS PLANNED TO BE PUBLISHED 1st APRIL 2023**
 
 **Latest version source:**
 
