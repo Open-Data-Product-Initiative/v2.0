@@ -159,13 +159,16 @@ Here's the list of attributes which can occur at the document root level. In the
   "brandSlogan": "Passion for the data monetization",
   "type": "dataset",
   "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
-  "useCases": {
-    "useCase": {
-      "useCaseTitle":"Build attractive and lucrative petstore!",
-      "useCaseDescription":"Use case description how succesfull petstore chain was established in Abu Dhabi",
-      "useCaseURL":"https://marketplace.com/usecase1" 
-    }
-  } 
+   "useCases":[
+         {
+            "useCase":{
+               "useCaseTitle":"Build attractive and lucrative petstore!",
+               "useCaseDescription":"Use case description how succesfull petstore chain was established in Abu Dhabi",
+               "useCaseURL":"https://marketplace.com/usecase1"
+            }
+         }
+      ]
+   }
 }
 
 ```
@@ -180,7 +183,7 @@ Here's the list of attributes which can occur at the document root level. In the
 | version | string | The versioning scheme is **major.minor.**. Examples: 1.0, 2.1, 3.15 | The version of the product. |
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | brandSlogan | string | - | Brand related slogan like Nike has *just do it*. |
-| useCases | element | - | Contains list of related usecases with description information and link to details |
+| useCases | element | array | Contains list of related usecases with description information and link to details |
 | useCaseTitle| string | string | Title of the usecase |
 | useCaseDescription| string | string | Brief description of the usecase |
 | useCaseURL| URL | Valid URL | Valid URL of the more detailed usecase description. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
