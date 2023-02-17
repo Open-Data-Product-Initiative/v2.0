@@ -35,6 +35,15 @@ You'll find a complete machine-readbale example of a data product from the right
          }
       ]
    },
+   "recommendedDataProducts":[
+      {
+         "dataProduct":{
+            "dataProductName":"Petstores in Abu Dhabi",
+            "dataProductDescription":"Details of petstores in Abu Dhabi. Updated annually.",
+            "dataProductURL":"https://marketplace.com/dataproduct"
+         }
+      }
+   ],
    "pricing":[
       {
          "name":"Premium subscription 1 year",
