@@ -571,7 +571,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
   <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">This is an example of a Petstore product.</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">productSeries</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Lovely pets data products™</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
@@ -621,6 +622,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>-</td>
 <td>The description of the product. Text only.</td>
+</tr>
+<tr>
+<td>productSeries</td>
+<td>string</td>
+<td>-</td>
+<td>A group of products in the product mix which are associated with each other and they can be obtained for the same type of customers or they are marketable for the same type of market place</td>
 </tr>
 <tr>
 <td>categories</td>
