@@ -190,7 +190,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 |---|---|---|---|
 | valueProposition | string  | text content, max length 512 chars  | This is the product's value proposition. Often one or two sentences and crystallizes the value for the customer. |
 | description | string | - | The description of the product. Text only. |
-| productSeries | string | - | A group of products in the product mix which are associated with each other and they can be obtained for the same type of customers or they are marketable for the same type of market place |
+| productSeries | string | - | A group of products in the product mix which are associated with each other and they can be obtained for the same type of customers or they are marketable for the same type of market place. |
 | categories| array | - | Comma separates array of categories. |
 | standards| array | - | Comma separates array of standards related e.g. to data content or quality, such as ISO 8000 or ISO 19131. |
 | tags| array | - | Comma separates array of tags. |
