@@ -161,6 +161,16 @@ Recommended **OBJECT** offers means to attach related data products to the data 
   "brandSlogan": "Passion for the data monetization",
   "type": "dataset",
   "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
+   "useCases":[
+         {
+            "useCase":{
+               "useCaseTitle":"Build attractive and lucrative petstore!",
+               "useCaseDescription":"Use case description how succesfull petstore chain was established in Abu Dhabi",
+               "useCaseURL":"https://marketplace.com/usecase1"
+            }
+         }
+      ]
+   },
     "recommended": {
       "dataproduct": {
       "name": "Petstores in Abu Dhabi",
@@ -172,14 +182,7 @@ Recommended **OBJECT** offers means to attach related data products to the data 
       "description":"Pet market opportunities in Abu Dhabi. Updated annually. Contains market analysis and predictions",
       "url": "https://marketplace2.com/pet-market-insights"
       }
-    },
-  "useCases": {
-    "useCase": {
-      "useCaseTitle":"Build attractive and lucrative petstore!",
-      "useCaseDescription":"Use case description how succesfull petstore chain was established in Abu Dhabi",
-      "useCaseURL":"https://marketplace.com/usecase1" 
     }
-  } 
 }
 
 ```
@@ -194,14 +197,14 @@ Recommended **OBJECT** offers means to attach related data products to the data 
 | version | string | The versioning scheme is **major.minor.**. Examples: 1.0, 2.1, 3.15 | The version of the product. |
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | brandSlogan | string | - | Brand related slogan like Nike has *just do it*. |
+| useCases | element | array | Contains list of related usecases with description information and link to details |
+| useCaseTitle| string | string | Title of the usecase |
+| useCaseDescription| string | string | Brief description of the usecase |
+| useCaseURL| URL | Valid URL | Valid URL of the more detailed usecase description. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | dataproduct | element | - | Data product to recommend. |
 | name | string | any | Name of the recommended data product |
 | description | string | any | Description of the recommended data product |
 | url | URL | Valid URL. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). | The URL of the recommended data product offering data product details in human readable format.   |
-| useCases | element | - | Contains list of related usecases with description information and link to details |
-| useCaseTitle| string | string | Title of the usecase |
-| useCaseDescription| string | string | Brief description of the usecase |
-| useCaseURL| URL | Valid URL | Valid URL of the more detailed usecase description. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 
 
 <button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script>
