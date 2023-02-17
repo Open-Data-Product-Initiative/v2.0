@@ -9,7 +9,8 @@ You'll find a complete machine-readbale example of a data product from the right
    "Product":{
       "name":"Pets of the year",
       "productID":"123456are",
-      "description":"",
+      "description": "This is an example of a Petstore product.",
+      "productSeries": "Lovely pets data products",
       "visibility":"private",
       "status":"draft",
       "version":"0.1",
