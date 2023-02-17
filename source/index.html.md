@@ -143,6 +143,8 @@ Here's the list of attributes which can occur at the document root level. In the
 
 ## Optional attributes
 
+Recommended **OBJECT** offers means to attach related data products to the data product at hand. The source of the recommended data product might be from the same marketplace/catalog or an external one. Recommended object offers method to extend the reach and promotion escpecially when data product is treated as an independent entity much like described in Data Mesh. Also when data product is published in a marketplace, the Recommended object offers means to promote other than just the data products from the given data marketplace. In short, tis object is mainly for discovery and reach purposes. 
+
 > Example of document level attribute usage and structure:
 
 ```javascript
@@ -158,7 +160,19 @@ Here's the list of attributes which can occur at the document root level. In the
   "tags": ["pet"],
   "brandSlogan": "Passion for the data monetization",
   "type": "dataset",
-  "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png"
+  "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
+    "recommended": {
+      "dataproduct": {
+      "name": "Petstores in Abu Dhabi",
+      "description":"Details of petstores in Abu Dhabi. Updated annually",
+      "url": "https://marketplace.com/petstores"
+      }, 
+      "dataproduct": {
+      "name": "Insights of pet market opportunities in Abu Dhabi",
+      "description":"Pet market opportunities in Abu Dhabi. Updated annually. Contains market analysis and predictions",
+      "url": "https://marketplace2.com/pet-market-insights"
+      }
+    }
 }
 
 ```
@@ -173,5 +187,9 @@ Here's the list of attributes which can occur at the document root level. In the
 | version | string | The versioning scheme is **major.minor.**. Examples: 1.0, 2.1, 3.15 | The version of the product. |
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | brandSlogan | string | - | Brand related slogan like Nike has *just do it*. |
+| dataproduct | element | - | Data product to recommend. |
+| name | string | any | Name of the recommended data product |
+| description | string | any | Description of the recommended data product |
+| url | URL | Valid URL. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). | The URL of the recommended data product offering data product details in human readable format.   |
 
 <button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script>
