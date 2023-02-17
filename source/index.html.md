@@ -154,7 +154,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
   "name": "Pets of the year",
   "productID": "123456are",
   "description": "This is an example of a Petstore product.",
-  "productSeries": "Lovely pets data products™",
+  "productSeries": "Lovely pets data products",
   "visibility": "private",
   "status": "draft",
   "version": "0.1",
