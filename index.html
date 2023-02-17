@@ -561,6 +561,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tr>
 </tbody></table>
 <h2 id='optional-attributes'>Optional attributes</h2>
+<p>Recommended <strong>OBJECT</strong> offers means to attach related data products to the data product at hand. The source of the recommended data product might be from the same marketplace/catalog or an external one. Recommended object offers method to extend the reach and promotion escpecially when data product is treated as an independent entity much like described in Data Mesh. Also when data product is published in a marketplace, the Recommended object offers means to promote other than just the data products from the given data marketplace. In short, tis object is mainly for discovery and reach purposes. </p>
+
 <blockquote>
 <p>Example of document level attribute usage and structure:</p>
 </blockquote>
@@ -577,6 +579,18 @@ The JSON examples are not based on any real data product, but exemplify the usag
   <span class="dl">"</span><span class="s2">brandSlogan</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Passion for the data monetization</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">recommended</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">dataproduct</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Petstores in Abu Dhabi</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Details of petstores in Abu Dhabi. Updated annually</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://marketplace.com/petstores</span><span class="dl">"</span>
+      <span class="p">},</span> 
+      <span class="dl">"</span><span class="s2">dataproduct</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Insights of pet market opportunities in Abu Dhabi</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Pet market opportunities in Abu Dhabi. Updated annually. Contains market analysis and predictions</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://marketplace2.com/pet-market-insights</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
   <span class="dl">"</span><span class="s2">useCases</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
     <span class="dl">"</span><span class="s2">useCase</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
       <span class="dl">"</span><span class="s2">useCaseTitle</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Build attractive and lucrative petstore!</span><span class="dl">"</span><span class="p">,</span>
@@ -642,6 +656,30 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>-</td>
 <td>Brand related slogan like Nike has <em>just do it</em>.</td>
+</tr>
+<tr>
+<td>dataproduct</td>
+<td>element</td>
+<td>-</td>
+<td>Data product to recommend.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>any</td>
+<td>Name of the recommended data product</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>any</td>
+<td>Description of the recommended data product</td>
+</tr>
+<tr>
+<td>url</td>
+<td>URL</td>
+<td>Valid URL. See more from <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</td>
+<td>The URL of the recommended data product offering data product details in human readable format.</td>
 </tr>
 <tr>
 <td>useCases</td>
