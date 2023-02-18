@@ -1,4 +1,4 @@
-# Data Pricing
+# Data Pricing Plans
 
 Pricing is the process whereby a business sets the price at which it will sell its products and services. Pricing **OBJECT** consists of mandatory and optional attributes. This element contains pricing plans related data to be used for example in displaying the items in a marketplace. If needed the standard metadata is converted to marketplace internal format. We encourage all data product owners to enforce usage of this standard.  
 
@@ -24,7 +24,7 @@ Supported pricing models include:
 > Example of Pricing component usage with manadatory elements and attributes:
 
 ```javascript
-   "pricing": [ {
+   "pricingPlans": [ {
       {
          "name": "Premium Package Monthly",
          "priceCurrency": "EUR",
@@ -78,7 +78,7 @@ Supported pricing models include:
 > Example of Pricing component usage with some of the optional elements and attributes:
 
 ```javascript
-   "pricing" [ {
+   "pricingPlans" [ {
       {
          "name": "Premium subscription 1 year",
          "priceCurrency": "EUR",
