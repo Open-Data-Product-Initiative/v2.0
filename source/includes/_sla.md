@@ -24,12 +24,7 @@ No mandatory attributes at the moment. Optional attributes are listed in own tab
       {
          "unit": "milliseconds",
          "value": 200
-      }
-      "nullValues": 
-      {
-         "unit": "percentage",
-         "value": 0.01
-      }
+      },
       "support": 
       {
          "company": 
@@ -67,7 +62,6 @@ No mandatory attributes at the moment. Optional attributes are listed in own tab
 | updateFrequency | element  | Options for *unit* are: milliseconds, seconds, minutes, days, weeks, months, years, never, null. <br/><br/> *Value* attribute is Integer.  | Name of the quality attribute indicating the timely interval how often data is updated. |
 | uptime | element | Options for *unit* are: percentage, string, null. <br/><br/> The *value* attribute can be integer or string "best effort". | Uptime is the amount of time that a service is online available and operational. Guaranteed uptime is expressed as SLA level and is generally the most important metric to measure the quality of a hosting provider. An SLA level of 99.99% for example equates to 52 minutes and 36 seconds of downtime per year. in this context uptime is SLA.  |
 |  responseTime| element | *Unit* options are: milliseconds, seconds, null. <br/><br/>*Value* can be integer or null | Response time is the total amount of time it takes to respond to a request for service. |
-|  nullValues| element | *Unit* is percentage. <br/><br/>*Value* can be integer or null | Null values is the percentage of null values in the content. This is quite oftenly used as data quality attribute by data scientists. |
 | support | element | - | Support element describes how the customer can reach for help in case of difficulties in usage, billing, or otherwise. Support can be based on company provided support and community driven support. |
 | phoneNumber | string | - | The support phone number |
 | phoneServiceHours | string | - | Describes the service hours company provides. Contains information often in week level eg Mon-Fri at 8am - 4pm. |
