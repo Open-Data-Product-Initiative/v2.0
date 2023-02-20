@@ -928,6 +928,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
     <span class="dl">"</span><span class="s2">containerTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">helm</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">yaml</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">schemaLocationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://http://192.168.10.1/schemas/2016/petshopML-2.3/schema/petstore.xsd</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/rundatapipeline.yml</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">deploymentDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/datapipeline</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">dataLineageTool</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Collibra</span><span class="dl">"</span><span class="p">,</span>
@@ -987,6 +988,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>Options: announcement, draft, development, testing, acceptance, production, sunset, retired.</td>
 <td>Development status.</td>
+</tr>
+<tr>
+<td>schemaLocationURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL of the data product schema, such as XSD, XML or JSON Schema.</td>
 </tr>
 <tr>
 <td>scriptURL</td>
