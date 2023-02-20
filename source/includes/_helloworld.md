@@ -87,6 +87,7 @@ You'll find a complete machine-readbale example of a data product from the right
          "containerTool":"helm",
          "format":"yaml",
          "status":"development",
+         "schemaLocationURL": "http://http://192.168.10.1/schemas/2016/petshopML-2.3/schema/petstore.xsd",
          "scriptURL":"http://192.168.10.1/rundatapipeline.yml",
          "deploymentDocumentationURL":"http://192.168.10.1/datapipeline",
          "dataLineageTool":"Collibra",
