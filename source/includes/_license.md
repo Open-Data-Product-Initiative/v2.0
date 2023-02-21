@@ -24,6 +24,11 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
             }
    "governance": {
          "containsPersonalData": true,
+         "applicaplePrivacyLaws": [ 
+            "General Data Protection Regulation",
+            "Personal Information Protection and Electronic Documents Act (PIPEDA)",
+            "California Consumer Privacy Act (CCPA)"
+         ]
          "dpaURL": "http://192.168.10.1/dpaconditions",
          "audit": "Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.",
          "warranties": "Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.",
@@ -50,10 +55,11 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | resellingRights | boolean | true/false | Reselling rights. |
 | governance | element | - | Governance is the approach taken to ensure that the agreed outcomes are being fulfilled. |
 | containsPersonalData | boolean | true/false | Data contains personal data. |
+| applicaplePrivacyLaws| array| oneOf: listed laws from the UNCTAD maintained tool, https://unctad.org/page/data-protection-and-privacy-legislation-worldwide | The Privacy Law frameworks which are covered. Many of us know about The California Consumer Privacy Act of 2018 (CCPA) and  General Data Protection Regulation (GDPR) but the those are just the tip of the iceberg. 137 out of 194 countries had put in place legislation to secure the protection of data and privacy. (21st Feb 2023) |
 | dpaURL| URL| valid URL | The URL of the Data Processing Agreement (DPA). |
 | audit | string | text content, max length 512 chars | License auditing terms. |
 | warranties | string | text content, max length 512 chars | License warranties. |
 | forceMajeure | string | text content, max length 512 chars | Force Majeure |
 | damages| string | text content, max length 512 chars | Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right. |
 | confidentiality | string | text content, max length 512 chars| Restrictions and requirements imposed on the Data User regarding e.g. the use and disclosure of the Data Holder's confidential information. |
-| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local acts, degrees or law. |
+| applicableLaws | string | text content, max length 512 chars | Applicable laws not covered in **applicaplePrivacyLaws**, i.e local acts, degrees or law. |
