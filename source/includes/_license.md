@@ -11,8 +11,6 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
    "scope": {
          "definition": "The purpose of this license is to determine the terms and conditions applicable to the licensing of the data product, whereby Data Holder grants Data User the right to use the data.",
          "language": "en-us",
-         "permanent": false,
-         "exclusive": false,
          "terminationContitions": "Cancellation before 30 days. After the expiry of the right of use, the product and its derivatives must be removed.",
          "continuityConditions": "Expired license will automatically continued without written cancellation (termination) by Data Holder",
          "restrictions": "Data User agrees not to, directly or indirectly, participate in the unauthorized use, disclosure or conversion of any confidential information.",      
@@ -21,6 +19,8 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
             "US"
          ],
    "LicenseLimitations": [ 
+          "Permanent",
+          "Exclusivity",
           "Reproduction",
           "Display",
           "Distribution",
@@ -28,8 +28,8 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
           "Resellable",
           "Transferable",
           "Sublicensable"
-         ],
-            }
+         ]
+            },
    "governance": {
          "containsPersonalData": true,
          "applicaplePrivacyLaws": [ 
@@ -54,8 +54,6 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | scope | element | - |  Extent, range, coverage, area or space of the license. |
 | definition | string | text content, max length 512 chars  | Background and purpose of the license. |
 | language | string | ISO 639-1 standard language codes | License language. |
-| permanent | boolean | true/false|  License with no expiration date. |
-| exclusive | boolean | true/false|  The grant clause should address whether the license is being granted on an exclusive or nonexclusive basis. If exclusive, the agreement should address whether that exclusivity is to a certain right (e.g., reproduction, derivative work, etc.); geographic area; or within a certain industry or other field of use. |
 | terminationConditions | string | text content, max length 512 chars | Cancellation conditions of the license. |
 | continuityConditions | string |  text content, max length 512 chars | Continuity conditions of the license. |
 | restrictions | string | text content, max length 512 chars  | Restrictions of the license. |
