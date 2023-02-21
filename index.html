@@ -1408,6 +1408,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
          <span class="dl">"</span><span class="s2">definition</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">The purpose of this license is to determine the terms and conditions applicable to the licensing of the data product, whereby Data Holder grants Data User the right to use the data.</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">language</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">en-us</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">permanent</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">exclusive</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">terminationContitions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Cancellation before 30 days. After the expiry of the right of use, the product and its derivatives must be removed.</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">continuityConditions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Expired license will automatically continued without written cancellation (termination) by Data Holder</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">restrictions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User agrees not to, directly or indirectly, participate in the unauthorized use, disclosure or conversion of any confidential information.</span><span class="dl">"</span><span class="p">,</span>      
@@ -1469,6 +1470,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>boolean</td>
 <td>true/false</td>
 <td>License with no expiration date.</td>
+</tr>
+<tr>
+<td>exclusive</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>The grant clause should address whether the license is being granted on an exclusive or nonexclusive basis. If exclusive, the agreement should address whether that exclusivity is to a certain right (e.g., reproduction, derivative work, etc.); geographic area; or within a certain industry or other field of use.</td>
 </tr>
 <tr>
 <td>terminationConditions</td>
