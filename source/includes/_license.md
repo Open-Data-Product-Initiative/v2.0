@@ -15,20 +15,20 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
          "geographicalArea": [ 
             "EU",
             "US"
-         ]
+         ],
+         "Permanent":false,
+         "Exclusive":false,
          },
    "LicenseLimitations": [ 
-          "Permanent",
-          "Exclusivity",
           "Reproduction",
           "Display",
           "Distribution",
           "Adaptation",
-          "Resellable",
-          "Transferable",
-          "Sublicensable"
+          "Reselling",
+          "Sublicensing",
+          "Transfering"
          ],
-   "privavcy": {
+   "privacy": {
          "containsPersonalData": true,
          "applicaplePrivacyLaws": [ 
             "General Data Protection Regulation",
