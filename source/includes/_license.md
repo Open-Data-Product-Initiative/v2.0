@@ -28,7 +28,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
             "General Data Protection Regulation",
             "Personal Information Protection and Electronic Documents Act (PIPEDA)",
             "California Consumer Privacy Act (CCPA)"
-         ]
+         ],
          "dpaURL": "http://192.168.10.1/dpaconditions",
          "audit": "Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.",
          "transferable": false,
