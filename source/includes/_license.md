@@ -19,7 +19,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
          "Permanent":false,
          "Exclusive":false,
          },
-   "LicenseLimitations": [ 
+   "rights": [ 
           "Reproduction",
           "Display",
           "Distribution",
@@ -64,7 +64,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | continuityConditions | string |  text content, max length 512 chars | Continuity conditions of the license. |
 | restrictions | string | text content, max length 512 chars  | Restrictions of the license. |
 | geographicalArea | string |  ISO 3166-1 alpha-2 codes | License right restricted to the geographical area. |
-| licenseLimitations| array |  Options: Reproduction, Display, Distribution, Adaptation (right for derivate work), Resellable, Transferable, Sublicensable | Limited rights by the licence. Licenses can by default be assigned, transferred or sublicensed to another party, unless it is specifically restricted in the license agreement. |
+| rights| array |  Options: Reproduction, Display, Distribution, Adaptation (right for derivate work), Resellable, Transferable, Sublicensable | Limited rights by the licence. Licenses can by default be assigned, transferred or sublicensed to another party, unless it is specifically restricted in the license agreement. |
 | governance | element | - | Governance is the approach taken to ensure that the agreed outcomes are being fulfilled. |
 | privacy | element | - | Data privacy related attributes. |
 | containsPersonalData | boolean | true/false | Data contains personal data. |
