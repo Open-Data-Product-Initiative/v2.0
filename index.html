@@ -1420,6 +1420,11 @@ The JSON examples are not based on any real data product, but exemplify the usag
             <span class="p">}</span>
    <span class="dl">"</span><span class="s2">governance</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
          <span class="dl">"</span><span class="s2">containsPersonalData</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">applicaplePrivacyLaws</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span> 
+            <span class="dl">"</span><span class="s2">General Data Protection Regulation</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">Personal Information Protection and Electronic Documents Act (PIPEDA)</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">California Consumer Privacy Act (CCPA)</span><span class="dl">"</span>
+         <span class="p">]</span>
          <span class="dl">"</span><span class="s2">dpaURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/dpaconditions</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">audit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">warranties</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.</span><span class="dl">"</span><span class="p">,</span>
@@ -1513,6 +1518,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>Data contains personal data.</td>
 </tr>
 <tr>
+<td>applicaplePrivacyLaws</td>
+<td>array</td>
+<td>oneOf: listed laws from the UNCTAD maintained tool, https://unctad.org/page/data-protection-and-privacy-legislation-worldwide</td>
+<td>The Privacy Law frameworks which are covered. Many of us know about The California Consumer Privacy Act of 2018 (CCPA) and  General Data Protection Regulation (GDPR) but the those are just the tip of the iceberg. 137 out of 194 countries had put in place legislation to secure the protection of data and privacy. (21st Feb 2023)</td>
+</tr>
+<tr>
 <td>dpaURL</td>
 <td>URL</td>
 <td>valid URL</td>
@@ -1552,7 +1563,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>applicableLaws</td>
 <td>string</td>
 <td>text content, max length 512 chars</td>
-<td>Applicable laws, i.e local acts, degrees or law.</td>
+<td>Applicable laws not covered in <strong>applicaplePrivacyLaws</strong>, i.e local acts, degrees or law.</td>
 </tr>
 </tbody></table>
 <h1 id='data-holder'>Data Holder</h1>
