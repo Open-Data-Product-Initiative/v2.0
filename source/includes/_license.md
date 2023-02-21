@@ -28,6 +28,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
       "terminationContitions": "Cancellation before 30 days. After the expiry of the right of use, the product and its derivatives must be removed.",
       "continuityConditions": "Expired license will automatically continued without written cancellation (termination) by Data Holder"
    },
+
    "governance": {
       "audit": "Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.",
       "warranties": "Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.",
