@@ -20,7 +20,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
             "EU",
             "US"
          ],
-   "LicenseGrants": [ 
+   "LicenseLimitations": [ 
           "Reproduction",
           "Display",
           "Distribution",
@@ -60,7 +60,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | continuityConditions | string |  text content, max length 512 chars | Continuity conditions of the license. |
 | restrictions | string | text content, max length 512 chars  | Restrictions of the license. |
 | geographicalArea | string |  ISO 3166-1 alpha-2 codes | License right restricted to the geographical area. |
-| licenseGrants| array |  Options: Reproduction, Display, Distribution, Adaptation (right for derivate work), Resellable, Transferable, Sublicensable | Rights granted by the licence. Licenses can by default be assigned, transferred or sublicensed to another party, unless it is specifically restricted in the license agreement. A company who wants to sell their assets (since an exclusive license may be a significant asset) will want the ability to transfer, but the licensor may not want to do business with a new person that they didn’t approve. |
+| licenseLimitations| array |  Options: Reproduction, Display, Distribution, Adaptation (right for derivate work), Resellable, Transferable, Sublicensable | Limited rights by the licence. Licenses can by default be assigned, transferred or sublicensed to another party, unless it is specifically restricted in the license agreement. |
 | governance | element | - | Governance is the approach taken to ensure that the agreed outcomes are being fulfilled. |
 | containsPersonalData | boolean | true/false | Data contains personal data. |
 | applicaplePrivacyLaws| array| oneOf: listed laws from the UNCTAD maintained tool, https://unctad.org/page/data-protection-and-privacy-legislation-worldwide | The Privacy Law frameworks which are covered. Many of us know about The California Consumer Privacy Act of 2018 (CCPA) and  General Data Protection Regulation (GDPR) but the those are just the tip of the iceberg. 137 out of 194 countries had put in place legislation to secure the protection of data and privacy. (21st Feb 2023) |
