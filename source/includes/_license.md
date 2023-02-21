@@ -31,6 +31,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
          ]
          "dpaURL": "http://192.168.10.1/dpaconditions",
          "audit": "Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.",
+         "transferable": false,
          "warranties": "Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.",
          "forceMajeure": "Each party may suspend the fulfilment of its contractual obligations, when the said fulfilment is impossible or objectively too costly due to an unforeseeable impediment independent from the parties, such as for example: strike, boycott, lockout, fire, war (declared or not), civil war, riots and revolutions, requisitions, embargo, power blackouts, extraordinary breakage of machinery, delays in the delivery of components or raw materials.",
          "damages": "During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.",
@@ -58,6 +59,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | applicaplePrivacyLaws| array| oneOf: listed laws from the UNCTAD maintained tool, https://unctad.org/page/data-protection-and-privacy-legislation-worldwide | The Privacy Law frameworks which are covered. Many of us know about The California Consumer Privacy Act of 2018 (CCPA) and  General Data Protection Regulation (GDPR) but the those are just the tip of the iceberg. 137 out of 194 countries had put in place legislation to secure the protection of data and privacy. (21st Feb 2023) |
 | dpaURL| URL| valid URL | The URL of the Data Processing Agreement (DPA). |
 | audit | string | text content, max length 512 chars | License auditing terms. |
+| transferable | boolean | true/false | Licenses can by default be assigned or transferred to another party, unless it is specifically restricted in the license agreement. A company who wants to sell their assets (since an exclusive license may be a significant asset) will want the ability to transfer, but the licensor may not want to do business with a new person that they didn’t approve. |
 | warranties | string | text content, max length 512 chars | License warranties. |
 | forceMajeure | string | text content, max length 512 chars | Force Majeure |
 | damages| string | text content, max length 512 chars | Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right. |
