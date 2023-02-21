@@ -31,7 +31,6 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
    "governance": {
       "audit": "Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.",
       "warranties": "Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.",
-      
       "damages": "During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.",
       "confidentiality": "Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license." 
       "applicableLaws": "This license shall be interpreted, construed and enforced in accordance with the law of Finland, Incl. Copyright Act 404/1961."
@@ -56,6 +55,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | definition | string | text content, max length 512 chars  | Background and purpose of the license. |
 | language | string | ISO 639-1 standard language codes | License language. |
 | permanent | boolean | true/false|  License with no expiration date. |
+| termination | element | - | Licence termination and continuity related condititions. |
 | terminationConditions | string | text content, max length 512 chars | Cancellation conditions of the license. |
 | continuityConditions | string |  text content, max length 512 chars | Continuity conditions of the license. |
 | restrictions | string | text content, max length 512 chars  | Restrictions of the license. |
@@ -63,6 +63,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | copyrights | array |  Options: Reproduction, Display, Distribution, Adaptation (right for derivate work), Reselling |  
 Copyrights driven rights https://www.bakerlaw.com/webfiles/Rutkowski_Data_License_Agreements.pdf |
 | governance | element | - | Governance is the approach taken to ensure that the agreed outcomes are being fulfilled. |
+| privacy | element | - | Data privacy related attributes. |
 | containsPersonalData | boolean | true/false | Data contains personal data. |
 | applicaplePrivacyLaws| array| oneOf: listed laws from the UNCTAD maintained tool, https://unctad.org/page/data-protection-and-privacy-legislation-worldwide | The Privacy Law frameworks which are covered. Many of us know about The California Consumer Privacy Act of 2018 (CCPA) and  General Data Protection Regulation (GDPR) but the those are just the tip of the iceberg. 137 out of 194 countries had put in place legislation to secure the protection of data and privacy. (21st Feb 2023) |
 | dpaURL| URL| valid URL | The URL of the Data Processing Agreement (DPA). |
