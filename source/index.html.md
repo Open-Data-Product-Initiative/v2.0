@@ -197,13 +197,13 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 | version | string | The versioning scheme is **major.minor.**. Examples: 1.0, 2.1, 3.15 | The version of the product. |
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | brandSlogan | string | - | Brand related slogan like Nike has *just do it*. |
-| useCases | element | array | Contains list of related use cases with description information and link to details |
-| useCaseTitle| string | string | Title of the usecase |
-| useCaseDescription| string | string | Brief description of the usecase |
+| useCases | element | array | Contains list of related use cases with description information and link to details. |
+| useCaseTitle| string | string | Title of the usecase. |
+| useCaseDescription| string | string | Brief description of the usecase. |
 | useCaseURL| URL | Valid URL | Valid URL of the more detailed usecase description. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | recommendedDataProducts | element | array | Data products to recommend use next to this data product or as even replacement (for comparison). |
-| dataProductName | string | any | Name of the recommended data product |
-| dataProductdescription | string | any | Description of the recommended data product |
+| dataProductName | string | any | Name of the recommended data product. |
+| dataProductdescription | string | any | Description of the recommended data product. |
 | dataProductURL | URL | Valid URL. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). | The URL of the recommended data product offering data product details in human readable format.   |
 
 
