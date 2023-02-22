@@ -164,7 +164,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
   "brandSlogan": "Passion for the data monetization",
   "type": "dataset",
   "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
-  "recommendedUseCases":[
+  "useCases":[
          {
             "useCase":{
                "useCaseTitle":"Build attractive and lucrative petstore!",
