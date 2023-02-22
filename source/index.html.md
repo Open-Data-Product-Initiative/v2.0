@@ -194,7 +194,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 | categories| array | - | Comma separates array of categories. |
 | standards| array | - | Comma separates array of standards related e.g. to data content or quality, such as ISO 8000 or ISO 19131. |
 | tags| array | - | Comma separates array of tags. |
-| version | string | The versioning scheme is **major.minor.**. Examples: 1.0, 2.1, 3.15 | The version of the product. |
+| version | string | The versioning scheme is **major.minor.**. Examples: 1.0, 2.1, 3.15 | The version of the data product. Applies for OPDS metdata as well. |
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | brandSlogan | string | - | Brand related slogan like Nike has *just do it*. |
 | useCases | element | array | Contains list of related use cases with description information and link to details. |
