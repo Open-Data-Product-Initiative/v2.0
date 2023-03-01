@@ -166,6 +166,13 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
   "type": "dataset",
   "contentSample":"https://download.com/pets.json", 
   "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
+  "OutputFileFormats": [ 
+            "json",
+            "xml",
+            "csv",
+            "zip",
+            "PDF"
+         ],
   "useCases": [
          {
             "useCase":{
@@ -200,6 +207,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 | versionNotes | string | - | Additional information about the version |
 | contentSample| URL | Valid URL. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). | Sample content of the data product, for example JSON/XML output. This sample should match the actual data product output and give the data consumer an idea what to expect. Obviously if the data product is pure service for example dashboard or algorithm, then consider providing preview version or alike |
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
+| outputFileFormats | string | - | Output file formats for data product |
 | brandSlogan | string | - | Brand related slogan like Nike has *just do it*. |
 | useCases | element | array | Contains list of related use cases with description information and link to details. |
 | useCaseTitle| string | string | Title of the usecase. |
