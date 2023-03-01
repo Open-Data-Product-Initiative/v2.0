@@ -25,7 +25,7 @@ Supported pricing models include:
 > Example of Pricing component usage with manadatory elements and attributes:
 
 ```javascript
-   "pricingPlans": [ {
+   "pricingPlans": [ 
    {
       {
          "lang": "EN",
