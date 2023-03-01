@@ -158,6 +158,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
   "visibility": "private",
   "status": "draft",
   "version": "0.1",
+  "versionNotes":"New version with additional details such more accurate pet details",
   "categories": ["pets"],
   "standards": ["ISO 24631-6"],
   "tags": ["pet"],
@@ -196,6 +197,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 | standards| array | - | Comma separates array of standards related e.g. to data content or quality, such as ISO 8000 or ISO 19131. |
 | tags| array | - | Comma separates array of tags. |
 | version | string | The versioning scheme is **major.minor.**. Examples: 1.0, 2.1, 3.15 | The version of the data product. Applies for OPDS metadata as well. |
+| versionNotes | string | - | Additional information about the version |
 | contentSample| URL | Valid URL. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). | Sample content of the data product, for example JSON/XML output. This sample should match the actual data product output and give the data consumer an idea what to expect. Obviously if the data product is pure service for example dashboard or algorithm, then consider providing preview version or alike |
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | brandSlogan | string | - | Brand related slogan like Nike has *just do it*. |
