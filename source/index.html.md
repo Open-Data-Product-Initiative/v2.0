@@ -167,10 +167,10 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
   "contentSample":"https://download.com/pets.json", 
   "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
   "OutputFileFormats": [ 
-            "json",
-            "xml",
-            "csv",
-            "zip",
+            "JSON",
+            "XML",
+            "CSV",
+            "ZIP",
             "PDF"
          ],
   "useCases": [
