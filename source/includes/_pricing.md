@@ -27,7 +27,7 @@ Supported pricing models include:
 ```javascript
    "pricingPlans": [ {
    {
-     {
+      {
          "lang": "EN",
          "name": "Premium Package Monthly",
          "priceCurrency": "EUR",
@@ -36,7 +36,7 @@ Supported pricing models include:
          "unit": "recurring",
          "maxTransactionQuantity": 10000,
          "offering": ["20+ proofessional video guides", "20 hours of premium support" ]
-      }
+      
        },
        {
          "lang": "EN",
