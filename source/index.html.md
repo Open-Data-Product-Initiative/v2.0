@@ -170,7 +170,8 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
             "json",
             "xml",
             "csv",
-            "zip"
+            "zip",
+            "PDF"
          ],
   "useCases": [
          {
