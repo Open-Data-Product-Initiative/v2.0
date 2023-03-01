@@ -769,38 +769,59 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <p>Example of Pricing component usage with manadatory elements and attributes:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">pricingPlans</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span> <span class="p">{</span>
-      <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium Package Monthly</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span> 
-         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">10000</span>
-       <span class="p">},</span>
-       <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Freemium Package</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0.00</span><span class="dl">"</span><span class="p">,</span> 
-         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1000</span>
-       <span class="p">},</span>
-       <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Revenue sharing</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">percentage</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.50</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">revenue-sharing</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">20000</span>
+   <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">names</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">lang</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EN</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package Monthly</span><span class="dl">"</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">lang</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">FI</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium kuukausipaketti</span><span class="dl">"</span>
+         <span class="p">}</span>
       <span class="p">},</span>
-      <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">50.00</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">year</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">unlimited</span><span class="dl">"</span>
+      <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span> 
+      <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1000000</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">offering</span><span class="dl">"</span><span class="p">:{</span>
+         <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">lang</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EN</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">20+ proofessional video guides</span><span class="dl">"</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">lang</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EN</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">20 hours of premium support</span><span class="dl">"</span>
+         <span class="p">}</span>
       <span class="p">}</span>
+   <span class="p">},</span>
+   <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">names</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">lang</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EN</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">FREEMIUM Package</span><span class="dl">"</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">lang</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">FI</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Maksuton</span><span class="dl">"</span>
+         <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">freemium</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">offering</span><span class="dl">"</span><span class="p">:{</span>
+         <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">lang</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EN</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">100+ video guides from community</span><span class="dl">"</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">lang</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EN</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Email support</span><span class="dl">"</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+
    <span class="p">}</span>
   <span class="p">]</span>
 </code></pre></div>
@@ -813,10 +834,28 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tr>
 </thead><tbody>
 <tr>
-<td><strong>name</strong></td>
+<td><strong>names</strong></td>
+<td>element</td>
+<td>--</td>
+<td><strong>REQUIRED</strong> The element that contains pricing plan names in different languages as triplets (see below). Each Pricinglan MUST have at least one pricing plan name.</td>
+</tr>
+<tr>
+<td><strong>item</strong></td>
+<td>element</td>
+<td>--</td>
+<td>This is the triple root which contains two attributes: <em>lang</em> and <em>value</em>. The same triplet data model is used in Pricing plan <em>names</em> and <em>offering</em> elements. See the JSON example.</td>
+</tr>
+<tr>
+<td><strong>lang</strong></td>
 <td>string</td>
-<td>max length 256 chars</td>
-<td><strong>REQUIRED</strong> The name of the plan/offering.</td>
+<td>ISO 639-1 standard language codes</td>
+<td>This is the triple root which contains two attributes: <em>lang</em> and <em>value</em>. The same triplet data model is used in Pricing plan <em>names</em> and <em>offering</em> elements</td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>string</td>
+<td>--</td>
+<td>This is part of the triplet described above. It is the name value of the triplet in <em>lang</em> defined language. <br/><br/>In case of a pricingPlan name it&#39;s the name of the pricing plan for example in Finnish. In that case the <em>lang</em> attribute of this triplet is &#39;FI&#39;. <br/><br/> This attribute is used also with <em>offering</em> element. In that case <em>value</em> is the content of the offering list item in <em>lang</em> defined language.</td>
 </tr>
 <tr>
 <td><strong>priceCurrency</strong></td>
@@ -849,10 +888,10 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td><strong>REQUIRED</strong> The maximum transaction quantity for the given billing duration. Use this to define for example monthly (or any other period) request limit to the data product. Note! If you want to set unlimited use, value must be 0 (zero).</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>offering</strong></td>
+<td>element</td>
+<td>--</td>
+<td><strong>REQUIRED</strong> The element that contains pricing plan content in different languages as triplets (see below). Think of this as the list of what is included in the pricing plan and what you offer in return to the price asked. <br/><br/> The element contains <em>item</em> triplets with two attributes: <em>lang</em> and <em>value</em>. See the description above for those.</td>
 </tr>
 </tbody></table>
 
