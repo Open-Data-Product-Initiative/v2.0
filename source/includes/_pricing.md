@@ -26,7 +26,6 @@ Supported pricing models include:
 
 ```javascript
    "pricingPlans": [ 
-   {
       {
          "lang": "EN",
          "name": "Premium Package Monthly",
@@ -59,7 +58,6 @@ Supported pricing models include:
          "offering": ["100+ video guides from community" ]
 
       }
-   }
   ]
 ```
 
