@@ -27,74 +27,50 @@ Supported pricing models include:
 ```javascript
    "pricingPlans": [ {
    {
-      "names": {
-         "item":{
-            "lang":"EN",
-            "value":"Premium Package Monthly"
-         },
-         "item":{
-            "lang":"FI",
-            "value":"Premium kuukausipaketti"
-         }
-      },
-      "priceCurrency": "EUR",
-      "price": "5.00", 
-      "billingDuration": "month",
-      "unit": "recurring",
-      "maxTransactionQuantity": 1000000,
-      "offering":{
-         "item":{
-            "lang":"EN",
-            "value":"20+ proofessional video guides"
-         },
-         "item":{
-            "lang":"EN",
-            "value":"20 hours of premium support"
-         }
+     {
+         "lang": "EN",
+         "name": "Premium Package Monthly",
+         "priceCurrency": "EUR",
+         "price": "5.00", 
+         "billingDuration": "month",
+         "unit": "recurring",
+         "maxTransactionQuantity": 10000,
+         "offering": ["20+ proofessional video guides", "20 hours of premium support" ]
       }
-   },
-   {
-      "names": {
-         "item":{
-            "lang":"EN",
-            "value":"FREEMIUM Package"
-         },
-         "item":{
-            "lang":"FI",
-            "value":"Maksuton"
-         }
-      },
-      "billingDuration": "month",
-      "unit": "freemium",
-      "maxTransactionQuantity": 1000,
-      "offering":{
-         "item":{
-            "lang":"EN",
-            "value":"100+ video guides from community"
-         },
-         "item":{
-            "lang":"EN",
-            "value":"Email support"
-         }
-      }
-   }
+       },
+       {
+         "lang": "EN",
+         "name": "Freemium Package",
+         "priceCurrency": "EUR",
+         "price": "0.00", 
+         "billingDuration": "month",
+         "unit": "recurring",
+         "maxTransactionQuantity": 1000,
+         "offering": ["100+ video guides from community" ]
+       },
+       {
+         "lang": "EN",
+         "name": "Revenue sharing",
+         "priceCurrency": "percentage",
+         "price": "5.50",
+         "billingDuration": "month",
+         "unit": "revenue-sharing",
+         "maxTransactionQuantity": 20000,
+         "offering": ["100+ video guides from community" ]
 
+      }
    }
   ]
 ```
 
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
 |---|---|---|---|
-| **names**  | element | -- | **REQUIRED** The element that contains pricing plan names in different languages as triplets (see below). Each Pricinglan MUST have at least one pricing plan name.   |
-| **item**  | element | -- | This is the triple root which contains two attributes: *lang* and *value*. The same triplet data model is used in Pricing plan *names* and *offering* elements. See the JSON example.|
-| **lang**  | string | ISO 639-1 standard language codes | This is the triple root which contains two attributes: *lang* and *value*. The same triplet data model is used in Pricing plan *names* and *offering* elements|
-| **value**  | string | -- | This is part of the triplet described above. It is the name value of the triplet in *lang* defined language. <br/><br/>In case of a pricingPlan name it's the name of the pricing plan for example in Finnish. In that case the *lang* attribute of this triplet is 'FI'. <br/><br/> This attribute is used also with *offering* element. In that case *value* is the content of the offering list item in *lang* defined language. |
+| **lang**  | string | ISO 639-1 standard language codes |**REQUIRED** Defines the language used in the package details. For example in case langugae is Finnish, this is 'FI'. You can have as many packages you like with as many langugaes as needed. |
 | **priceCurrency** | string  |  Use standard formats: [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency format e.g. "USD"; Ticker symbol for cryptocurrencies e.g. "BTC"  | **REQUIRED** The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies. If the *unit* is revenue-sharing, then this attribute value MUST be percentage.  |
 | **price** | string  | -  | **REQUIRED** The offer price of a product, or of a price component, or revenue-sharing percentage. <br/><br/> If the *unit* of pricing is revenue-sharing, then this *price* attribute value is percentage value. <br/><br/> Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols. <br/><br/>With *data-volume* the price is for each 1GB of data. |
 | **billingDuration** | string  | options: instant, day, week, month, year  | **REQUIRED** Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan. |
 | **unit** | string | One of: one-time-payment, pay-per-use, recurring, revenue-sharing, data-volume , pay-what-you-want, freemium | **REQUIRED** One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. <br/><br/> *Pay-per-use* is intended for continuous usage and price set is for each successful usage action. <br/><br/> *Recurrring* is intended for continuous time period plans. <br/><br/>*Revenue sharing* is a performance-based income model. An effective revenue sharing deal structure is offering your expertise to a business owner to help them grow their business. In return, you get paid a percentage of the revenue as a royalty fee. <br/><br/> *Freemium* is for free access. Use this option also for open data. <br/><br/> *Data-volume* is for data amount based pricing in which customer pays based on the served data amount. The price is always for 1GB of data. <br/><br/> *pay-what-you-want*  is a pricing system where buyers pay any desired amount for a given commodity, sometimes including zero. In some cases, a minimum (floor) price may be set, and/or a suggested price may be indicated as guidance for the buyer. The buyer can also select an amount higher than the standard price for the commodity. If the floor price is set, use *minPrice* attribute. |
 | **maxTransactionQuantity** | Integer |  Integer | **REQUIRED** The maximum transaction quantity for the given billing duration. Use this to define for example monthly (or any other period) request limit to the data product. Note! If you want to set unlimited use, value must be 0 (zero). |
-| **offering**  | element | -- | **REQUIRED** The element that contains pricing plan content in different languages as triplets (see below). Think of this as the list of what is included in the pricing plan and what you offer in return to the price asked. <br/><br/> The element contains *item* triplets with two attributes: *lang* and *value*. See the description above for those. |
 
 <button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script>
 
