@@ -1429,51 +1429,49 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <blockquote>
 <p>Example of License Object usage:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight javascript tab-javascript"><code>
-<span class="dl">"</span><span class="s2">license</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-   <span class="dl">"</span><span class="s2">scope</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">definition</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">The purpose of this license is to determine the terms and conditions applicable to the licensing of the data product, whereby Data Holder grants Data User the right to use the data.</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">language</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">en-us</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">restrictions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User agrees not to, directly or indirectly, participate in the unauthorized use, disclosure or conversion of any confidential information.</span><span class="dl">"</span><span class="p">,</span>      
-         <span class="dl">"</span><span class="s2">geographicalArea</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span> 
-            <span class="dl">"</span><span class="s2">EU</span><span class="dl">"</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">US</span><span class="dl">"</span>
-         <span class="p">],</span>
-         <span class="dl">"</span><span class="s2">Permanent</span><span class="dl">"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">Exclusive</span><span class="dl">"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
-         <span class="p">},</span>
-   <span class="dl">"</span><span class="s2">rights</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span> 
-          <span class="dl">"</span><span class="s2">Reproduction</span><span class="dl">"</span><span class="p">,</span>
-          <span class="dl">"</span><span class="s2">Display</span><span class="dl">"</span><span class="p">,</span>
-          <span class="dl">"</span><span class="s2">Distribution</span><span class="dl">"</span><span class="p">,</span>
-          <span class="dl">"</span><span class="s2">Adaptation</span><span class="dl">"</span><span class="p">,</span>
-          <span class="dl">"</span><span class="s2">Reselling</span><span class="dl">"</span><span class="p">,</span>
-          <span class="dl">"</span><span class="s2">Sublicensing</span><span class="dl">"</span><span class="p">,</span>
-          <span class="dl">"</span><span class="s2">Transferring</span><span class="dl">"</span>
-         <span class="p">],</span>
-   <span class="dl">"</span><span class="s2">privacy</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">containsPersonalData</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">applicaplePrivacyLaws</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span> 
-            <span class="dl">"</span><span class="s2">General Data Protection Regulation</span><span class="dl">"</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">Personal Information Protection and Electronic Documents Act (PIPEDA)</span><span class="dl">"</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">California Consumer Privacy Act (CCPA)</span><span class="dl">"</span>
-         <span class="p">],</span>
-         <span class="dl">"</span><span class="s2">dpaURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/dpaconditions</span><span class="dl">"</span><span class="p">,</span>
-         <span class="p">},</span>
-   <span class="dl">"</span><span class="s2">termination</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">terminationContitions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Cancellation before 30 days. After the expiry of the right of use, the product and its derivatives must be removed.</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">continuityConditions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Expired license will automatically continued without written cancellation (termination) by Data Holder</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">forceMajeure</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Each party may suspend the fulfilment of its contractual obligations, when the said fulfilment is impossible or objectively too costly due to an unforeseeable impediment independent from the parties, such as for example: strike, boycott, lockout, fire, war (declared or not), civil war, riots and revolutions, requisitions, embargo, power blackouts, extraordinary breakage of machinery, delays in the delivery of components or raw materials.</span><span class="dl">"</span>
-         <span class="p">},</span>
-   <span class="dl">"</span><span class="s2">governance</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">damages</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">confidentiality</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license.</span><span class="dl">"</span> 
-         <span class="dl">"</span><span class="s2">applicableLaws</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">This license shall be interpreted, construed and enforced in accordance with the law of Finland, Incl. Copyright Act 404/1961.</span><span class="dl">"</span>
-         <span class="dl">"</span><span class="s2">warranties</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">audit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.</span><span class="dl">"</span>
-         <span class="p">}</span>
-  <span class="p">}</span>
-
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>    <span class="dl">"</span><span class="s2">license</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">scope</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">definition</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">The purpose of this license is to determine the terms and conditions applicable to the licensing of the data product, whereby Data Holder grants Data User the right to use the data.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">language</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">en-us</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">restrictions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User agrees not to, directly or indirectly, participate in the unauthorized use, disclosure or conversion of any confidential information.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">geographicalArea</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="dl">"</span><span class="s2">EU</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">US</span><span class="dl">"</span>
+            <span class="p">],</span>
+            <span class="dl">"</span><span class="s2">permanent</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">exclusive</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">rights</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="dl">"</span><span class="s2">Reproduction</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">Display</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">Distribution</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">Adaptation</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">Reselling</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">Sublicensing</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">Transferring</span><span class="dl">"</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">privacy</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">containsPersonalData</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">applicaplePrivacyLaws</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="dl">"</span><span class="s2">General Data Protection Regulation</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">Personal Information Protection and Electronic Documents Act (PIPEDA)</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">California Consumer Privacy Act (CCPA)</span><span class="dl">"</span>
+            <span class="p">],</span>
+            <span class="dl">"</span><span class="s2">dpaURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/dpaconditions</span><span class="dl">"</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">termination</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">terminationConditions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Cancellation before 30 days. After the expiry of the right of use, the product and its derivatives must be removed.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">continuityConditions</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Expired license will automatically continued without written cancellation (termination) by Data Holder</span><span class="dl">"</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">governance</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">damages</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">confidentiality</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">applicableLaws</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">This license shall be interpreted, construed and enforced in accordance with the law of Finland, Incl. Copyright Act 404/1961.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">warranties</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder makes no warranties, express or implied, guarantees or conditions with respect to your use of the data product. To the extent permitted under local law, Data Holder disclaims all liability for any damages or losses, including direct, consequential, special, indirect, incidental or punitive, resulting from Data User use of the data product.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">audit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">forceMajeure</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Each party may suspend the fulfilment of its contractual obligations, when the said fulfilment is impossible or objectively too costly due to an unforeseeable impediment independent from the parties, such as for example: strike, boycott, lockout, fire, war (declared or not), civil war, riots and revolutions, requisitions, embargo, power blackouts, extraordinary breakage of machinery, delays in the delivery of components or raw materials.</span><span class="dl">"</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
 </code></pre></div>
 <table><thead>
@@ -1503,10 +1501,52 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>License language.</td>
 </tr>
 <tr>
+<td>restrictions</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Restrictions of the license.</td>
+</tr>
+<tr>
+<td>geographicalArea</td>
+<td>string</td>
+<td>ISO 3166-1 alpha-2 codes</td>
+<td>License right restricted to the geographical area.</td>
+</tr>
+<tr>
 <td>permanent</td>
 <td>boolean</td>
 <td>true/false</td>
 <td>License with no expiration date.</td>
+</tr>
+<tr>
+<td>exclusive</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>The exclusive license holder is given complete control over the use of the data product, and no other person or organization is allowed to use it during the term of the license agreement.</td>
+</tr>
+<tr>
+<td>rights</td>
+<td>array</td>
+<td>Options: Reproduction <i>(rights to reproduce)</i>, Display <i>(disclose data to others)</i>, Distribution <i>(right to distribute)</i>, Adaptation <i>(right for derivate work)</i>, Reselling <i>(right to resell)</i>, Transferring <i>(transferable data license)</i>, Sublicensing <i>(license grant may include a right to sublicense)</i></td>
+<td>Rights granted by the licence. The texts in brackets and <i>italic</i> are intended to describe rights.</td>
+</tr>
+<tr>
+<td>privacy</td>
+<td>element</td>
+<td>-</td>
+<td>Data privacy related attributes.</td>
+</tr>
+<tr>
+<td>containsPersonalData</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>Data contains personal data.</td>
+</tr>
+<tr>
+<td>dpaURL</td>
+<td>URL</td>
+<td>valid URL</td>
+<td>The URL of the Data Processing Agreement (DPA).</td>
 </tr>
 <tr>
 <td>termination</td>
@@ -1527,52 +1567,10 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>Continuity conditions of the license.</td>
 </tr>
 <tr>
-<td>restrictions</td>
-<td>string</td>
-<td>text content, max length 512 chars</td>
-<td>Restrictions of the license.</td>
-</tr>
-<tr>
-<td>geographicalArea</td>
-<td>string</td>
-<td>ISO 3166-1 alpha-2 codes</td>
-<td>License right restricted to the geographical area.</td>
-</tr>
-<tr>
-<td>rights</td>
-<td>array</td>
-<td>Options: Reproduction <i>(rights to reproduce)</i>, Display <i>(disclose data to others)</i>, Distribution <i>(right to distribute)</i>, Adaptation <i>(right for derivate work)</i>, Reselling <i>(right to resell)</i>, Transferring <i>(transferable data license)</i>, Sublicensing <i>(license grant may include a right to sublicense)</i></td>
-<td>Rights granted by the licence. The texts in brackets and <i>italic</i> are intended to describe rights</td>
-</tr>
-<tr>
 <td>governance</td>
 <td>element</td>
 <td>-</td>
 <td>Governance is the approach taken to ensure that the agreed outcomes are being fulfilled.</td>
-</tr>
-<tr>
-<td>privacy</td>
-<td>element</td>
-<td>-</td>
-<td>Data privacy related attributes.</td>
-</tr>
-<tr>
-<td>containsPersonalData</td>
-<td>boolean</td>
-<td>true/false</td>
-<td>Data contains personal data.</td>
-</tr>
-<tr>
-<td>applicaplePrivacyLaws</td>
-<td>array</td>
-<td>oneOf: listed laws from the UNCTAD maintained tool, https://unctad.org/page/data-protection-and-privacy-legislation-worldwide</td>
-<td>The Privacy Law frameworks which are covered. Many of us know about The California Consumer Privacy Act of 2018 (CCPA) and  General Data Protection Regulation (GDPR) but the those are just the tip of the iceberg. 137 out of 194 countries had put in place legislation to secure the protection of data and privacy. (21st Feb 2023)</td>
-</tr>
-<tr>
-<td>dpaURL</td>
-<td>URL</td>
-<td>valid URL</td>
-<td>The URL of the Data Processing Agreement (DPA).</td>
 </tr>
 <tr>
 <td>audit</td>
@@ -1585,12 +1583,6 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>text content, max length 512 chars</td>
 <td>License warranties.</td>
-</tr>
-<tr>
-<td>forceMajeure</td>
-<td>string</td>
-<td>text content, max length 512 chars</td>
-<td>Force Majeure</td>
 </tr>
 <tr>
 <td>damages</td>
@@ -1609,6 +1601,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>text content, max length 512 chars</td>
 <td>Applicable laws not covered in <strong>applicaplePrivacyLaws</strong>, i.e local acts, degrees or law.</td>
+</tr>
+<tr>
+<td>forceMajeure</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>Force Majeure</td>
 </tr>
 </tbody></table>
 <h1 id='data-holder'>Data Holder</h1>
