@@ -18,7 +18,7 @@ includes:
   - sla
   - qa
   - license
-  - provider
+  - dataholder
   - extensions
   - helloworld
   - terms
