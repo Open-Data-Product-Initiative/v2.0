@@ -43,6 +43,7 @@ The same logic applies to the optional attributes as well. Optional attributes a
       {
          "taxID": "12243434-12",
          "vatID": "12243434-12",
+         "businessDomain": "Data Product Business"
          "logoURL": "https://mindmote.fi/logo.png",
          "description": "Digital Economy services and tools",
          "URL": "https://mindmote.fi",
@@ -64,6 +65,7 @@ The same logic applies to the optional attributes as well. Optional attributes a
 |---|---|---|---|
 | taxID | string  | - | The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain. |
 | vatID | string | - | The Value-added Tax ID of the organization or person. |
+| businessDomain | string | - |  In a data mesh architecture, data (or data product) ownership and management are distributed across self-contained business domains. |
 | logoURL | URL | Valid URL. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). | The URL pointing to organisation logo. |
 | description | string | Max length 512 chars | The introduction to the organization. Often contains information of what the organisation does and focuses on. |
 | URL | URL | Valid URL. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). | The URL of the organization's website.   |
