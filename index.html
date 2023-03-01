@@ -584,6 +584,13 @@ The JSON examples are not based on any real data product, but exemplify the usag
   <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">contentSample</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://download.com/pets.json</span><span class="dl">"</span><span class="p">,</span> 
   <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">OutputFileFormats</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span> 
+            <span class="dl">"</span><span class="s2">json</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">xml</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">csv</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">zip</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">PDF</span><span class="dl">"</span>
+         <span class="p">],</span>
   <span class="dl">"</span><span class="s2">useCases</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
          <span class="p">{</span>
             <span class="dl">"</span><span class="s2">useCase</span><span class="dl">"</span><span class="p">:{</span>
@@ -672,6 +679,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>URL</td>
 <td>Valid URL</td>
 <td>Valid URL of the logo. See more from <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</td>
+</tr>
+<tr>
+<td>outputFileFormats</td>
+<td>string</td>
+<td>-</td>
+<td>Output file formats for data product</td>
 </tr>
 <tr>
 <td>brandSlogan</td>
