@@ -207,6 +207,7 @@ You'll find a complete machine-readbale example of a data product from the right
    "dataHolder":{
       "taxID":"12243434-12",
       "vatID":"12243434-12",
+      "businessDomain": "Data Product Business",
       "logoURL":"https://mindmote.fi/logo.png",
       "description":"Digital Economy services and tools",
       "URL":"https://mindmote.fi",
