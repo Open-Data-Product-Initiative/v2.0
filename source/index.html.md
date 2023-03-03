@@ -131,7 +131,7 @@ Here's the list of attributes which can occur at the document root level. In the
     "type": "dataset"
   },
   "fi": {
-    "name": "Vuoden suosikki lemmikit",
+    "name": "Vuoden suosituimmat lemmikit",
     "productID": "123456are",
     "visibility": "private",
     "status": "draft",
