@@ -25,45 +25,43 @@ Supported pricing models include:
 > Example of Pricing component usage with manadatory elements and attributes:
 
 ```javascript
-   "pricingPlans": [ 
-      {
-         "lang": "EN",
-         "name": "Premium Package Monthly",
-         "priceCurrency": "EUR",
-         "price": "5.00", 
-         "billingDuration": "month",
-         "unit": "recurring",
-         "maxTransactionQuantity": 10000,
-         "offering": ["20+ proofessional video guides", "20 hours of premium support" ]
-      
-       },
-       {
-         "lang": "EN",
-         "name": "Freemium Package",
-         "priceCurrency": "EUR",
-         "price": "0.00", 
-         "billingDuration": "month",
-         "unit": "recurring",
-         "maxTransactionQuantity": 1000,
-         "offering": ["100+ video guides from community" ]
-       },
-       {
-         "lang": "EN",
-         "name": "Revenue sharing",
-         "priceCurrency": "percentage",
-         "price": "5.50",
-         "billingDuration": "month",
-         "unit": "revenue-sharing",
-         "maxTransactionQuantity": 20000,
-         "offering": ["100+ video guides from community" ]
-
+   "pricingPlans": { 
+      "en": {  
+         {
+            "name": "Premium Package Monthly",
+            "priceCurrency": "EUR",
+            "price": "5.00", 
+            "billingDuration": "month",
+            "unit": "recurring",
+            "maxTransactionQuantity": 10000,
+            "offering": ["20+ proofessional video guides", "20 hours of premium support" ]
+         
+         },
+         {
+            "name": "Freemium Package",
+            "priceCurrency": "EUR",
+            "price": "0.00", 
+            "billingDuration": "month",
+            "unit": "recurring",
+            "maxTransactionQuantity": 1000,
+            "offering": ["100+ video guides from community" ]
+         },
+         {
+            "name": "Revenue sharing",
+            "priceCurrency": "percentage",
+            "price": "5.50",
+            "billingDuration": "month",
+            "unit": "revenue-sharing",
+            "maxTransactionQuantity": 20000,
+            "offering": ["100+ video guides from community" ]
+         }
       }
-  ]
+}
 ```
 
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
 |---|---|---|---|
-| **lang**  | string | ISO 639-1 standard language codes |**REQUIRED** Defines the language used in the package details. For example in case langugae is Finnish, this is 'FI'. You can have as many packages you like with as many langugaes as needed. |
+| **en** | element | [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) defined 2-letter codes | **REQUIRED** - **NOTE! This is a dynamic element!** This element binds together other product pricing plan attributes and expresses the langugage used. In the example this is "en", which indicates that pricing plan details are in English. If you would like to use French details, then name the element "fr". The naming of this element follows options (language codes) listed in [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) standard. <br/><br/> You can have product pricing plan details in multiple languages simply by adding similar sets like the example - just change the binding element name to matching language code. <br/><br/> The pattern to implement multilanguage support for data products was adopted from de facto UI translation practices. The attributes inside this element are commonly rendered in the UI for the consumer and providing a simple way to implement that was the driving reasoning. See for example  [JSON - Multi Language](https://simplelocalize.io/docs/file-formats/multi-language-json/) |
 | **priceCurrency** | string  |  Use standard formats: [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency format e.g. "USD"; Ticker symbol for cryptocurrencies e.g. "BTC"  | **REQUIRED** The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies. If the *unit* is revenue-sharing, then this attribute value MUST be percentage.  |
 | **price** | string  | -  | **REQUIRED** The offer price of a product, or of a price component, or revenue-sharing percentage. <br/><br/> If the *unit* of pricing is revenue-sharing, then this *price* attribute value is percentage value. <br/><br/> Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols. <br/><br/>With *data-volume* the price is for each 1GB of data. |
 | **billingDuration** | string  | options: instant, day, week, month, year  | **REQUIRED** Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan. |
@@ -80,7 +78,8 @@ Supported pricing models include:
 > Example of Pricing component usage with some of the optional elements and attributes:
 
 ```javascript
-   "pricingPlans" [ {
+   "pricingPlans" { 
+      "en": {  
       {
          "name": "Premium subscription 1 year",
          "priceCurrency": "EUR",
@@ -97,7 +96,7 @@ Supported pricing models include:
          "valueAddedTaxIncluded": false
        }
    }
-   ]
+}
 ```
 
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
