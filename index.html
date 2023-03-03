@@ -513,11 +513,13 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <p>Example of document level attribute usage and structure:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span>
+  <span class="dl">"</span><span class="s2">en</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 </code></pre></div>
@@ -529,6 +531,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <th>Description</th>
 </tr>
 </thead><tbody>
+<tr>
+<td>en</td>
+<td>element</td>
+<td><a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a> defined 2-letter codes</td>
+<td><strong>REQUIRED</strong> - <strong>NOTE! This is a dynamic element!</strong> This element binds together other product attributes and expresses the langugage used. In the example this is &quot;en&quot;, which indicates that product details are in English. If you would like to use French details, then name the element &quot;fr&quot;. The naming of this element follows options (language codes) listed in ISO 639-1 standard. <br/><br/> You can have product details in multiple languages simply by adding similar sets like the example - just change the binding element name to matching language code. <br/><br/> The pattern to implement multilanguage support for data products was adopted from de facto UI translation practices. The attributes inside this element are commonly rendered in the UI for the consumer and providing a simple way to implement that was the driving reasoning. See for example  <a href="https://simplelocalize.io/docs/file-formats/multi-language-json/">JSON - Multi Language</a></td>
+</tr>
 <tr>
 <td><strong>name</strong></td>
 <td>string</td>
@@ -614,12 +622,6 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <th>Description</th>
 </tr>
 </thead><tbody>
-<tr>
-<td>en</td>
-<td>element</td>
-<td><a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a> defined 2-letter codes</td>
-<td><strong>NOTE! This is a dynamic element!</strong> This element binds together other product attributes and expresses the langugage used. In the example this is &quot;en&quot;, which indicates that product details are in English. If you would like to use French details, then name the element &quot;fr&quot;. The naming of this element follows options (language codes) listed in ISO 639-1 standard. <br/><br/> You can have product details in multiple languages simply by adding similar sets like the example - just change the binding element name to matching language code. <br/><br/> The pattern to implement multilanguage support for data products was adopted from de facto UI translation practices. The attributes inside this element are commonly rendered in the UI for the consumer and providing a simple way to implement that was the driving reasoning. See for example  <a href="https://simplelocalize.io/docs/file-formats/multi-language-json/">JSON - Multi Language</a></td>
-</tr>
 <tr>
 <td>valueProposition</td>
 <td>string</td>
