@@ -129,6 +129,13 @@ Here's the list of attributes which can occur at the document root level. In the
     "visibility": "private",
     "status": "draft",
     "type": "dataset"
+  },
+  "fi": {
+    "name": "Vuoden suosikki lemmikit",
+    "productID": "123456are",
+    "visibility": "private",
+    "status": "draft",
+    "type": "dataset"
   }
 }
 
