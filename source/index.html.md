@@ -151,52 +151,47 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 
 ```javascript
 "Product": {
-  "name": "Pets of the year",
-  "productID": "123456are",
-  "description": "This is an example of a Petstore product.",
-  "productSeries": "Lovely pets data products",
-  "visibility": "private",
-  "status": "draft",
-  "version": "0.1",
-  "versionNotes":"New version with additional details such more accurate pet details",
-  "categories": ["pets"],
-  "standards": ["ISO 24631-6"],
-  "tags": ["pet"],
-  "brandSlogan": "Passion for the data monetization",
-  "type": "dataset",
-  "contentSample":"https://download.com/pets.json", 
-  "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
-  "OutputFileFormats": [ 
-            "JSON",
-            "XML",
-            "CSV",
-            "ZIP",
-            "PDF"
-         ],
-  "useCases": [
-         {
-            "useCase":{
-               "useCaseTitle":"Build attractive and lucrative petstore!",
-               "useCaseDescription":"Use case description how succesfull petstore chain was established in Abu Dhabi",
-               "useCaseURL":"https://marketplace.com/usecase1"
-            }
-         }
+    "en":{
+      "name": "Pets of the year",
+      "description": "This is an example of a Petstore product.",
+      "productSeries": "Lovely pets data products",
+      "visibility": "private",
+      "versionNotes":"New version with additional details such more accurate pet details",
+      "categories": ["pets"],
+      "tags": ["pet"],
+      "brandSlogan": "Passion for the data monetization",
+      "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
+      "productID": "123456are",
+      "visibility": "private",
+      "status": "draft",
+      "version": "0.1",
+      "standards": ["ISO 24631-6"],
+      "contentSample":"https://download.com/pets.json", 
+      "OutputFileFormats": [ 
+              "JSON",
+              "XML",
+              "CSV",
+              "ZIP",
+              "PDF"
+          ],
+      "useCases": [
+        {              
+          "useCaseTitle":"Build attractive and lucrative petstore!",
+          "useCaseDescription":"Use case description how succesfull petstore chain was established in Abu Dhabi",
+          "useCaseURL":"https://marketplace.com/usecase1"     
+        }
       ],
-    "recommendedDataProducts": [
-         {
-            "dataProduct":{
-               "dataProductName":"Petstores in Abu Dhabi",
-               "dataProductDescription":"Details of petstores in Abu Dhabi. Updated annually.",
-               "dataProductURL":"https://marketplace.com/dataproduct"
-            }
-         }
-      ]
+      "recommendedDataProducts": [
+          "https://marketplace.com/dataproduct.json, https://marketplace.com/dataproduct-another.json"
+          ]
+  }
 }
 
 ```
 
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
 |---|---|---|---|
+| en | element | ISO 639-1 defined 2-letter codes | **NOTE!*** This is a dynamic element! This element binds together other product attributes and expresses the langugage used. In the example this is "en", which indicates that product details are in English. If you would like to use French details, then name the element "fr". The naming of this element follows options (language codes) listed in ISO 639-1 standard. <br/><br/> You can have product details in multiple languages simply by adding similar sets like the example - just change the binding element name to matching language code. <br/><br/> The pattern to implement multilanguage support for data products was adopted from de facto UI translation practices. The attributes inside this element are commonly rendered in the UI for the consumer and providing a simple way to implement that was the driving reasoning. See for example  [JSON - Multi Language](https://simplelocalize.io/docs/file-formats/multi-language-json/) |
 | valueProposition | string  | text content, max length 512 chars  | This is the product's value proposition. Often one or two sentences and crystallizes the value for the customer. |
 | description | string | - | The description of the product. Text only. |
 | productSeries | string | - | A group of products in the product mix which are associated with each other and they can be obtained for the same type of customers or they are marketable for the same type of market place. |
@@ -209,14 +204,10 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 | logoURL| URL | Valid URL | Valid URL of the logo. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
 | outputFileFormats | string | - | Output file formats for data product |
 | brandSlogan | string | - | Brand related slogan like Nike has *just do it*. |
-| useCases | element | array | Contains list of related use cases with description information and link to details. |
+| useCases | element | array | Contains list of related use cases with description information and link to details. **NOTE!** These examples are expected to use same language as defined previously in the data product details content binding element. |
 | useCaseTitle| string | string | Title of the usecase. |
 | useCaseDescription| string | string | Brief description of the usecase. |
-| useCaseURL| URL | Valid URL | Valid URL of the more detailed usecase description. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). |
-| recommendedDataProducts | element | array | Data products to recommend use next to this data product or as even replacement (for comparison). |
-| dataProductName | string | any | Name of the recommended data product. |
-| dataProductdescription | string | any | Description of the recommended data product. |
-| dataProductURL | URL | Valid URL. See more from [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). | The URL of the recommended data product offering data product details in human readable format.   |
-
+| useCaseURL| URL | Valid URL, [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) | Valid URL of the more detailed usecase description. |
+| recommendedDataProducts | array | Array of valid URLs ([RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)) | Data products to recommend use next to this data product or even as replacement (for comparison). The URL provided MUST reference a description of a data product following this same standard |
 
 <button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script>
