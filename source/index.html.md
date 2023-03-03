@@ -64,7 +64,10 @@ Copyrights 2022 Mindmote Oy. Original creators of the specification: Jarkko Moil
 
 The Open Data Product Specification is a vendor-neutral, open-source machine-readable data product metadata model. It defines the objects and attributes as well as the structure of digital data products. The work is based on existing standards (schema.org), best practices and emerging concepts like Data Mesh. The reasoning is that we reuse and proudly copy instead of reinventing the wheel. More detailed information of the origin can be found from the [Open Data Product Specification homepage](https://www.dataproductbusiness.com/open-data-product-specification). 
 
+![odps-features](images/features.png)
+
 The specification has been designed with four major aspects of the data product in mind: 1) technical (infrastructure & access), 2) business (pricing & plans), 3) legal (licensing & IPR), and 4) ethical (privacy & mydata). The four aspects are described in 6 elements, which contain attributes and other elements. 
+
 
 ![odps-model](images/odps-2.0-structure.jpg)
 
