@@ -6,7 +6,7 @@ You'll find a complete machine-readbale example of a data product from the right
 
 ```javascript
 {
-   "Product":{
+   "product":{
       "name":"Pets of the year",
       "productID":"123456are",
       "description": "This is an example of a Petstore product.",
