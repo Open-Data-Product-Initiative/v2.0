@@ -150,7 +150,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 > Example of document level attribute usage and structure:
 
 ```javascript
-"Product": {
+"product": {
   "name": "Pets of the year",
   "productID": "123456are",
   "description": "This is an example of a Petstore product.",
