@@ -64,12 +64,13 @@ Copyrights 2022 Mindmote Oy. Original creators of the specification: Jarkko Moil
 
 The Open Data Product Specification is a vendor-neutral, open-source machine-readable data product metadata model. It defines the objects and attributes as well as the structure of digital data products. The work is based on existing standards (schema.org), best practices and emerging concepts like Data Mesh. The reasoning is that we reuse and proudly copy instead of reinventing the wheel. More detailed information of the origin can be found from the [Open Data Product Specification homepage](https://www.dataproductbusiness.com/open-data-product-specification). 
 
+Open Data Product Specification 2.0 (ODPS) changes the data product metadata model towards a standalone model, which helps to decouple data product from the systems often directly associated with it. With help of the ODPS 2.0 data product can be presented and described to the customer also as such without any need for marketplace or other systems. 
+
+Development of the standard is coordinated in Open Data Product Initiative (ODPI) which was established in July 2022 to make it possible for the specification to grow and become institutionlized. The ODPI was taken under the wings of open source chapter of Open Collective.
+
 ![odps-features](images/features.png)
 
-The specification has been designed with four major aspects of the data product in mind: 1) technical (infrastructure & access), 2) business (pricing & plans), 3) legal (licensing & IPR), and 4) ethical (privacy & mydata). The four aspects are described in 6 elements, which contain attributes and other elements. 
-
-
-![odps-model](images/odps-2.0-structure.jpg)
+## Specification aims and aspects
 
 **Specification aims:**
 
@@ -80,6 +81,13 @@ The specification has been designed with four major aspects of the data product 
 * enable creation of automated data product deployment with standard methods (DataOps)
 
 **Note!** In the "Open Data Product" focus is on the latter words and the prefix  'open' refers to the openness of the standard. Any kind of connotations to open data (a different thing) are not intentional, intended, or desirable.
+
+The specification has been designed with four major aspects of the data product in mind: 1) technical (infrastructure & access), 2) business (pricing & plans), 3) legal (licensing & IPR), and 4) ethical (privacy & mydata). The four aspects are described in 6 elements, which contain attributes and other elements. 
+
+
+![odps-model](images/odps-2.0-structure.jpg)
+
+
 
 If you see something missing, described inaccurately or plain wrong, or you want to comment the specification, click the button below and proceed forward. 
 
