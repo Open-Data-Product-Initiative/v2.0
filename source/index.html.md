@@ -1,5 +1,5 @@
 ---
-title: Open Data Product Specification | Enabling Data Economy | Data Product Business
+title: Open Data Product Specification 2.0 | Enabling Data Economy | Open Data Product Initiative
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - JSON
@@ -36,7 +36,7 @@ meta:
 # OPEN DATA PRODUCT SPECIFICATION
 
 
-## Development Version 
+## Production version 
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.
 
@@ -44,11 +44,11 @@ The specification is shared under <a href='https://creativecommons.org/licenses/
 
 Copyrights 2022 Mindmote Oy. Original creators of the specification: Jarkko Moilanen (igniter), Jussi Niilahti & Toni Luhti
 
-**VERSION 2.0 -  TO BE PUBLISHED 1st APRIL 2023**
+**VERSION 2.0 - TO BE PUBLISHED 1st APRIL 2023**
 
-**Latest version source:**
+**Version source:**
 
-* <a href="https://github.com/Open-Data-Product-Initiative/open-data-product-spec-1.1dev">https://github.com/Open-Data-Product-Initiative/open-data-product-spec-1.1dev</a>
+* <a href="https://github.com/Open-Data-Product-Initiative/open-data-product-spec-2.0">https://github.com/Open-Data-Product-Initiative/open-data-product-spec-2.0</a>
 
 **Editors:**
 
@@ -57,7 +57,7 @@ Copyrights 2022 Mindmote Oy. Original creators of the specification: Jarkko Moil
 
 **Participate:**
 
-* [Raise an issue in Github](https://github.com/Data-Product-Business/open-data-product-spec-1.1dev/issues)
+* [Raise an issue in Github](https://github.com/Data-Product-Business/open-data-product-spec-2.0/issues)
 * [Raise an issue in service designed for average mortals](https://v90nkeo0oq0.typeform.com/to/Q1Zo6wE5) 
 
 ## Introduction
