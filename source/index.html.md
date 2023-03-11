@@ -44,7 +44,7 @@ The specification is shared under <a href='https://creativecommons.org/licenses/
 
 Copyrights 2022 Mindmote Oy. Original creators of the specification: Jarkko Moilanen (igniter), Jussi Niilahti & Toni Luhti
 
-**VERSION 2.0 DERIVED FROM THIS DEVELOPMENT VERSION IS PLANNED TO BE PUBLISHED 1st APRIL 2023**
+**VERSION 2.0 -  TO BE PUBLISHED 1st APRIL 2023**
 
 **Latest version source:**
 
