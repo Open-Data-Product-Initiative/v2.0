@@ -171,36 +171,37 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 > Example of document level attribute usage and structure:
 
 ```javascript
-"Product": {
-    "en":{
-      "name": "Pets of the year",
-      "description": "This is an example of a Petstore product.",
-      "productSeries": "Lovely pets data products",
-      "visibility": "private",
-      "versionNotes":"New version with additional details such more accurate pet details",
-      "categories": ["pets"],
-      "tags": ["pet"],
-      "brandSlogan": "Passion for the data monetization",
-      "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
-      "productID": "123456are",
-      "visibility": "private",
-      "status": "draft",
-      "version": "0.1",
-      "standards": ["ISO 24631-6"],
-      "contentSample":"https://download.com/pets.json", 
-      "OutputFileFormats": [ 
-              "JSON",
-              "XML",
-              "CSV",
-              "ZIP",
-              "PDF"
-          ],
-      "useCases": [
-        {              
-          "useCaseTitle":"Build attractive and lucrative petstore!",
-          "useCaseDescription":"Use case description how succesfull petstore chain was established in Abu Dhabi",
-          "useCaseURL":"https://marketplace.com/usecase1"     
-        }
+"product": {
+  "name": "Pets of the year",
+  "productID": "123456are",
+  "description": "This is an example of a Petstore product.",
+  "productSeries": "Lovely pets data products",
+  "visibility": "private",
+  "status": "draft",
+  "version": "0.1",
+  "versionNotes":"New version with additional details such more accurate pet details",
+  "categories": ["pets"],
+  "standards": ["ISO 24631-6"],
+  "tags": ["pet"],
+  "brandSlogan": "Passion for the data monetization",
+  "type": "dataset",
+  "contentSample":"https://download.com/pets.json", 
+  "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
+  "OutputFileFormats": [ 
+            "JSON",
+            "XML",
+            "CSV",
+            "ZIP",
+            "PDF"
+         ],
+  "useCases": [
+         {
+            "useCase":{
+               "useCaseTitle":"Build attractive and lucrative petstore!",
+               "useCaseDescription":"Use case description how succesfull petstore chain was established in Abu Dhabi",
+               "useCaseURL":"https://marketplace.com/usecase1"
+            }
+         }
       ],
       "recommendedDataProducts": [
           "https://marketplace.com/dataproduct.json, https://marketplace.com/dataproduct-another.json"
