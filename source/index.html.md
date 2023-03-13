@@ -133,7 +133,7 @@ Here's the list of attributes which can occur at the document root level. In the
 > Example of document level attribute usage and structure:
 
 ```javascript
-"Product": {
+"product": {
   "en": {
     "name": "Pets of the year",
     "productID": "123456are",
