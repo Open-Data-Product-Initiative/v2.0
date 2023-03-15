@@ -9,6 +9,7 @@ You'll find a complete machine-readbale example of a data product from the right
    "product":{
       "name":"Pets of the year",
       "productID":"123456are",
+      "valueProposition": "Design a customised petstore using a data product that describes pets with their habits, preferences and characteristics.",
       "description": "This is an example of a Petstore product.",
       "productSeries": "Lovely pets data products",
       "visibility":"private",
