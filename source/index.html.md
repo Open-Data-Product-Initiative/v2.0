@@ -8,7 +8,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
 toc_footers:
   - <a href='https://www.dataproductbusiness.com/'>Data Product Business</a>
   - License <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a>
-  - <br/><a href='https://www.dataproductbusiness.com/open-data-product-specification'>Specification home</a>
+  - <br/><a href='https://opendataproducts.org'>Specification home</a>
 
 
 includes:
