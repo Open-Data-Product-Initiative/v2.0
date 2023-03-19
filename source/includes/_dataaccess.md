@@ -6,14 +6,14 @@ Data Access **OBJECT** describes the authorised ability to retrieve, edit, copy 
 
 ```javascript
  
- "dataAccess": {
-  "interface" {
-    "outputPorttype": "API",
-    "authenticationMethod": "OAuth",
-    "specification": "OAS",
-    "format": "GraphQL",
-    "specsURL": "http://192.168.10.1/petshop.json",
-    "documentationURL": "http://192.168.10.1/petshop"
+ "dataAccess":{
+  "interface"{
+    "outputPorttype":"API",
+    "authenticationMethod":"OAuth",
+    "specification":"OAS",
+    "format":"GraphQL",
+    "specsURL":"http://192.168.10.1/petshop.json",
+    "documentationURL":"http://192.168.10.1/petshop"
   }
 }
   
