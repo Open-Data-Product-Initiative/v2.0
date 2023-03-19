@@ -11,7 +11,7 @@ You'll find a complete machine-readbale example of a data product from the right
          "name":"Pets of the year"
       },
       "fi":{
-         "name":"testi"
+         "name":"Vuoden suosituimmat lemmikit"
       },
       "productID":"123456are",
       "valueProposition":"Design a customised petstore using a data product that describes pets with their habits, preferences and characteristics.",
