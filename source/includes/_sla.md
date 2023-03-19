@@ -12,47 +12,47 @@ No mandatory attributes at the moment. Optional attributes are listed in own tab
    "SLA": {
       "updateFrequency": 
       {
-         "unit": "hours",
-         "value": 1
+         "unit":"hours",
+         "value":1
       },
       "uptime": 
       {
-         "unit": "percentage",
-         "value": 99
+         "unit":"percentage",
+         "value":99
       },
       "responseTime": 
       {
-         "unit": "milliseconds",
-         "value": 200
+         "unit":"milliseconds",
+         "value":200
       },
       "support": 
       {
          "company": 
          {
-            "phoneNumber": "",
-            "phoneServiceHours": ""
+            "phoneNumber":"",
+            "phoneServiceHours":""
             "chatURL":"",
-            "chatServiceHours": "",
-            "chatResponseTime": "",
-            "email": "",
-            "emailServiceHours": "",
-            "emailResponseTime": "",
-            "documentationURL": "",
-            "guidesURL": "",
+            "chatServiceHours":"",
+            "chatResponseTime":"",
+            "email":"support@support.org",
+            "emailServiceHours":"",
+            "emailResponseTime":"",
+            "documentationURL":"",
+            "guidesURL":"",
          },
          "community": 
          {
-            "stackoverflowURL": "",
-            "forumURL": "" 
-            "slackURL": "",
-            "twitterURL": ""
+            "stackoverflowURL":"",
+            "forumURL":"" 
+            "slackURL":"",
+            "twitterURL":""
          }
       }
       "observability":
       {
-         "logsURL": "https://logs.com"
-         "dashboardURL": "https://dashboard.com",
-         "uptimeURL": "https://uptime.com"
+         "logsURL":"https://logs.com"
+         "dashboardURL":"https://dashboard.com",
+         "uptimeURL":"https://uptime.com"
       } 
    }
 ```
