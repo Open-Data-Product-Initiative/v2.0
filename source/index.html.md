@@ -135,11 +135,14 @@ Here's the list of attributes which can occur at the document root level. In the
 ```javascript
 "product":{
   "en":{
-    "name":"Pets of the year"
+    "name":"Pets of the year",
+    "productID":"123456are",
+    "visibility":"private",
+    "status":"draft",
+    "type":"dataset"
    },
    "fi":{
-    "name":"Vuoden suosituimmat lemmikit"
-    },
+    "name":"Vuoden suosituimmat lemmikit",
     "productID":"123456are",
     "visibility":"private",
     "status":"draft",
@@ -169,11 +172,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 ```javascript
 "product":{
   "en":{
-    "name":"Pets of the year"
-   },
-   "fi":{
-    "name":"Vuoden suosituimmat lemmikit"
-    },
+  "name":"Pets of the year"
   "productID":"123456are",
   "valueProposition":"Design a customised petstore using a data product that describes pets with their habits, preferences and characteristics.",
   "description":"This is an example of a Petstore product.",
