@@ -168,7 +168,12 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 
 ```javascript
 "product":{
-  "name":"Pets of the year",
+  "en":{
+    "name":"Pets of the year"
+   },
+   "fi":{
+    "name":"Vuoden suosituimmat lemmikit"
+    },
   "productID":"123456are",
   "valueProposition":"Design a customised petstore using a data product that describes pets with their habits, preferences and characteristics.",
   "description":"This is an example of a Petstore product.",
