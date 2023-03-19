@@ -766,16 +766,19 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <blockquote>
 <p>Example of Pricing component usage with manadatory elements and attributes:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">pricingPlans</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span> 
-      <span class="dl">"</span><span class="s2">en</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>  
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">pricingPlans</span><span class="dl">"</span><span class="p">:{</span> 
+      <span class="dl">"</span><span class="s2">en</span><span class="dl">"</span><span class="p">:{</span>  
          <span class="p">{</span>
-            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium Package Monthly</span><span class="dl">"</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span> 
-            <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">offering</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">20+ proofessional video guides</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">20 hours of premium support</span><span class="dl">"</span> <span class="p">]</span>
+            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package Monthly</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span> 
+            <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">10000</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">offering</span><span class="dl">"</span><span class="p">:[</span>
+            <span class="dl">"</span><span class="s2">20+ proofessional video guides</span><span class="dl">"</span><span class="p">,</span> 
+            <span class="dl">"</span><span class="s2">20 hours of premium support</span><span class="dl">"</span>
+            <span class="p">]</span>
 
          <span class="p">},</span>
          <span class="p">{</span>
@@ -785,7 +788,9 @@ The JSON examples are not based on any real data product, but exemplify the usag
             <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
             <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span><span class="p">,</span>
             <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">offering</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">100+ video guides from community</span><span class="dl">"</span> <span class="p">]</span>
+            <span class="dl">"</span><span class="s2">offering</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="dl">"</span><span class="s2">100+ video guides from community</span><span class="dl">"</span>
+            <span class="p">]</span>
          <span class="p">},</span>
          <span class="p">{</span>
             <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Revenue sharing</span><span class="dl">"</span><span class="p">,</span>
@@ -794,7 +799,9 @@ The JSON examples are not based on any real data product, but exemplify the usag
             <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
             <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">revenue-sharing</span><span class="dl">"</span><span class="p">,</span>
             <span class="dl">"</span><span class="s2">maxTransactionQuantity</span><span class="dl">"</span><span class="p">:</span> <span class="mi">20000</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">offering</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">100+ video guides from community</span><span class="dl">"</span> <span class="p">]</span>
+            <span class="dl">"</span><span class="s2">offering</span><span class="dl">"</span><span class="p">:[</span>
+            <span class="dl">"</span><span class="s2">100+ video guides from community</span><span class="dl">"</span>
+            <span class="p">]</span>
          <span class="p">}</span>
       <span class="p">}</span>
 <span class="p">}</span>
