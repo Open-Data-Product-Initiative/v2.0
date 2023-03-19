@@ -22,47 +22,45 @@ Supported pricing models include:
 
 ## Mandatory attributes and elements
 
-> Example of Pricing component usage with manadatory elements and attributes:
+> Example of Pricing component usage with manadatory elements and attributes. Example language is english.:
 
 ```javascript
-   "pricingPlans":{ 
-      "en":{  
-         {
-            "name":"Premium Package Monthly",
-            "priceCurrency":"EUR",
-            "price":"5.00", 
-            "billingDuration":"month",
-            "unit":"recurring",
-            "maxTransactionQuantity":10000,
-            "offering":[
-            "20+ proofessional video guides", 
-            "20 hours of premium support"
-            ]
-         
-         },
-         {
-            "name": "Freemium Package",
+
+ "pricingPlans": {
+    "en": [
+        {
+            "name": "Premium subscription 1 year",
             "priceCurrency": "EUR",
-            "price": "0.00", 
+            "price": "50.00",
+            "billingDuration": "year",
+            "unit": "recurring",
+            "maxTransactionQuantity": "unlimited"
+        },
+        {
+            "name": "Premium Package Monthly",
+            "priceCurrency": "EUR",
+            "price": "5.00",
             "billingDuration": "month",
             "unit": "recurring",
-            "maxTransactionQuantity": 1000,
-            "offering": [
-            "100+ video guides from community"
-            ]
-         },
-         {
+            "maxTransactionQuantity": 10000
+        },
+        {
+            "name": "Freemium Package",
+            "priceCurrency": "EUR",
+            "price": "0.00",
+            "billingDuration": "month",
+            "unit": "recurring",
+            "maxTransactionQuantity": 1000
+        },
+        {
             "name": "Revenue sharing",
             "priceCurrency": "percentage",
             "price": "5.50",
             "billingDuration": "month",
             "unit": "revenue-sharing",
-            "maxTransactionQuantity": 20000,
-            "offering":[
-            "100+ video guides from community"
-            ]
-         }
-      }
+            "maxTransactionQuantity": 20000
+        }
+    ]
 }
 ```
 
@@ -85,25 +83,25 @@ Supported pricing models include:
 > Example of Pricing component usage with some of the optional elements and attributes:
 
 ```javascript
-   "pricingPlans" { 
-      "en": {  
-      {
-         "name": "Premium subscription 1 year",
-         "priceCurrency": "EUR",
-         "price": "10.00",
-         "minPrice": "5.00",
-         "maxPrice": "15.000"
-         "additionalPrice": 0.02
-      },
-      {
-         "name": "Premium Package",
-         "priceCurrency": "EUR",
-         "price": "10.00",
-         "maxPrice": "20.00",
-         "valueAddedTaxIncluded": false
-       }
+   "pricingPlans": {
+      "en": [
+         {
+            "name": "Premium subscription 1 year",
+            "priceCurrency": "EUR",
+            "price": "10.00",
+            "minPrice": "5.00",
+            "maxPrice": "15.000",
+            "additionalPrice": 0.02
+         },
+         {
+            "name": "Premium Package",
+            "priceCurrency": "EUR",
+            "price": "10.00",
+            "maxPrice": "20.00",
+            "valueAddedTaxIncluded": false
+         }
+      ]
    }
-}
 ```
 
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
