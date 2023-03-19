@@ -10,10 +10,10 @@ The extensions properties are implemented as patterned fields that are always pr
 
 ```javascript
    "product": {
-      "name": "Pets of the year",
-      "productID": "123456are",
-      "description": "",
-      "x-internal-id": "foobar123"
+      "name":"Pets of the year",
+      "productID":"123456are",
+      "description":"",
+      "x-internal-id":"foobar123"
 }
 
 ```
