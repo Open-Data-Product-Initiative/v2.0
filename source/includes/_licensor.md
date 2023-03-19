@@ -37,21 +37,21 @@ The same logic applies to the optional attributes as well. Optional attributes a
 ```javascript
    "Provider":
       {
-         "taxID": "12243434-12",
-         "vatID": "12243434-12",
-         "logoURL": "https://mindmote.fi/logo.png",
-         "description": "Digital Economy services and tools",
-         "URL": "https://mindmote.fi"
-         "telephone": "+35845 0232 2323",
-         "streetAddress": "Koulukatu 1",
-         "postalCode": "33100",
-         "addressRegion": "Pirkanmaa"
-         "addressLocality": "Tampere",
-         "addressCountry": "Finland",
-         "aggregateRating": "",
-         "ratingCount": 1245,
-         "slogan": "",
-         "parentOrganization": ""
+         "taxID":"12243434-12",
+         "vatID":"12243434-12",
+         "logoURL":"https://mindmote.fi/logo.png",
+         "description":"Digital Economy services and tools",
+         "URL":"https://mindmote.fi"
+         "telephone":"+35845 0232 2323",
+         "streetAddress":"Koulukatu 1",
+         "postalCode":"33100",
+         "addressRegion":"Pirkanmaa"
+         "addressLocality":"Tampere",
+         "addressCountry":"Finland",
+         "aggregateRating":"",
+         "ratingCount":1245,
+         "slogan":"",
+         "parentOrganization":""
       }
       
 ```
