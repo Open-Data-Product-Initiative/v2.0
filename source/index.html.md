@@ -135,21 +135,17 @@ Here's the list of attributes which can occur at the document root level. In the
 ```javascript
 "product":{
   "en":{
-    "name":"Pets of the year",
-    "productID":"123456are",
-    "visibility":"private",
-    "status":"draft",
-    "type":"dataset"
-  },
-  "fi":{
-    "name":"Vuoden suosituimmat lemmikit",
+    "name":"Pets of the year"
+   },
+   "fi":{
+    "name":"Vuoden suosituimmat lemmikit"
+    },
     "productID":"123456are",
     "visibility":"private",
     "status":"draft",
     "type":"dataset"
   }
 }
-
 ```
 
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
