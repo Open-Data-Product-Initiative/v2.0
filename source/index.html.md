@@ -133,20 +133,20 @@ Here's the list of attributes which can occur at the document root level. In the
 > Example of document level attribute usage and structure:
 
 ```javascript
-"product": {
-  "en": {
-    "name": "Pets of the year",
-    "productID": "123456are",
-    "visibility": "private",
-    "status": "draft",
-    "type": "dataset"
+"product":{
+  "en":{
+    "name":"Pets of the year",
+    "productID":"123456are",
+    "visibility":"private",
+    "status":"draft",
+    "type":"dataset"
   },
-  "fi": {
-    "name": "Vuoden suosituimmat lemmikit",
-    "productID": "123456are",
-    "visibility": "private",
-    "status": "draft",
-    "type": "dataset"
+  "fi":{
+    "name":"Vuoden suosituimmat lemmikit",
+    "productID":"123456are",
+    "visibility":"private",
+    "status":"draft",
+    "type":"dataset"
   }
 }
 
@@ -171,31 +171,31 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
 > Example of document level attribute usage and structure:
 
 ```javascript
-"product": {
-  "name": "Pets of the year",
-  "productID": "123456are",
-  "valueProposition": "Design a customised petstore using a data product that describes pets with their habits, preferences and characteristics.",
-  "description": "This is an example of a Petstore product.",
-  "productSeries": "Lovely pets data products",
-  "visibility": "private",
-  "status": "draft",
-  "version": "0.1",
+"product":{
+  "name":"Pets of the year",
+  "productID":"123456are",
+  "valueProposition":"Design a customised petstore using a data product that describes pets with their habits, preferences and characteristics.",
+  "description":"This is an example of a Petstore product.",
+  "productSeries":"Lovely pets data products",
+  "visibility":"private",
+  "status":"draft",
+  "version":"0.1",
   "versionNotes":"New version with additional details such more accurate pet details",
-  "categories": ["pets"],
-  "standards": ["ISO 24631-6"],
-  "tags": ["pet"],
-  "brandSlogan": "Passion for the data monetization",
-  "type": "dataset",
+  "categories":["pets"],
+  "standards":["ISO 24631-6"],
+  "tags":["pet"],
+  "brandSlogan":"Passion for the data monetization",
+  "type":"dataset",
   "contentSample":"https://download.com/pets.json", 
-  "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
-  "OutputFileFormats": [ 
+  "logoURL":"https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png",
+  "OutputFileFormats":[ 
             "JSON",
             "XML",
             "CSV",
             "ZIP",
             "PDF"
          ],
-  "useCases": [
+  "useCases":[
          {
             "useCase":{
                "useCaseTitle":"Build attractive and lucrative petstore!",
@@ -204,7 +204,7 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
             }
          }
       ],
-      "recommendedDataProducts": [
+      "recommendedDataProducts":[
           "https://marketplace.com/dataproduct.json, https://marketplace.com/dataproduct-another.json"
           ]
   }
