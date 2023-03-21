@@ -112,9 +112,8 @@ The right column contains JSON formatted examples of how the specification is us
 > Example of JSON formatted snippet from the Open Data Product specification:
 
 ```javascript
-"monitoring": {
-
-  "url": "https://monitoring.com"
+"monitoring":{
+  "url":"https://monitoring.com"
 }
 ```
 
