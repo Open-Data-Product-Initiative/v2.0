@@ -204,7 +204,8 @@ RecommendedUseCases **OBJECT** is an array which contains offers method to attac
          }
       ],
       "recommendedDataProducts":[
-          "https://marketplace.com/dataproduct.json, https://marketplace.com/dataproduct-another.json"
+          "https://marketplace.com/dataproduct.json",
+          "https://marketplace.com/dataproduct-another.json"
           ]
   }
 }
